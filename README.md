@@ -13,11 +13,17 @@
 
   [课程视频](https://www.youtube.com/watch?v=FgzM3zpZ55o&list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
 
+* [RL Course by David Silver](./RL by David Silver) ([slides](./RL_by_David_Silver/slides))
+
+  [课程主页](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)
+
+  [课程视频](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)
+
 ## 2.强化学习资料
 
 * ##### 教程：
 
-  [RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)，[slides](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)由于时间有点久远，至今没有看
+  [RL Course by David Silver](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)无痛入门，建议看youtube视频(B站视频画质感人)。虽然没字幕，但都是日常用语，查了几个关键字之后就能听懂了
 
   [李宏毅的强化学习教程](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)，讲的有点宽泛，有些公式有点难理解，可以当作科普
 
