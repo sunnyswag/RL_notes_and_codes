@@ -17,7 +17,7 @@
 
 * ##### 教程：
 
-  [RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)，由于时间有点久远，至今没有看
+  [RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)，[slides](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)由于时间有点久远，至今没有看
 
   [李宏毅的强化学习教程](https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_)，讲的有点宽泛，有些公式有点难理解，可以当作科普
 
@@ -67,7 +67,7 @@
 
 
 
+## 3.Logs
 
-
-
+​	今天(2019/6/12)，被CS234 Lecture2的notes和Assignments所吓到，准备老老实实看[RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)了，江湖有缘再见吧
 
