@@ -16,7 +16,7 @@
 
 ### Lecture 2: Markov Decision Process
 
-1.  Markov Process
+1. Markov Process
 
    马尔可夫过程可以定义为一个元组($S,P$)
 
@@ -26,7 +26,6 @@
    $$
    P_{ss'} = \mathbb{P}[S_{t+1} = s' | S_t = s]
    $$
-   
 
 2. Markov Reward Process
 
@@ -117,7 +116,7 @@ $$
 
    马尔可夫决策过程是马尔可夫奖励过程+决策：
 
-   马尔可夫决策过程可以表示为一个元组$(S,{\color{red}A},P,R,\gamma)$
+   马尔可夫决策过程可以表示为一个元组$(S,{\color{red}A},P,R,\gamma)​$
 
    $S ​$ 为有限的状态集
 
@@ -158,4 +157,38 @@ $$
    \end{cases}
    $$
    
+
+## Lecture 3: Planning by Dynamic Programming
+
+1. 如何提升一个Policy
+
+    1）Evaluate一个Policy $\pi$ ，
+   $$
+   V_\pi(s)=\mathbb{E}[R_{t+1}+\gamma R_{t+2}+\dots|S_t=s]
+   $$
+    2）使用 $v_\pi$ 贪婪的更新这个Policy
+   $$
+   \pi'=greedy(v_\pi)
+   $$
+   
+
+    3）具体更新迭代步骤，进行单步更新操作。具体意思为：当前动作的最大的q，需要大于或等于当前所能采取的任意动作所获得的q
+   $$
+   \pi' (s)={argmax \\a\in A}\;q_\pi (s,a)\\
+   q_\pi (s,\pi' (s)) = {max \\a\in A} q_\pi (s,a) ≥ q_\pi (s,π(s)) = v_\pi (s)
+   $$
+    4）稳定之后
+
+$$
+q_\pi (s,\pi' (s)) = {max \\a\in A} q_\pi (s,a) = q_\pi (s,π(s)) = v_\pi (s)
+$$
+
+2. 如何提升一个Value function
+
+   1）更新迭代
+   $$
+   v_∗(s) \leftarrow {max\\ a\in A} R^a_s + \gamma \;\sum_{s'\in S}
+   P^a_{ss'}v_∗(s')
+   $$
+   2）中间步骤无法代表任何一个policy
 
