@@ -1,4 +1,7 @@
 # RL_notes_and_codes
+
+* 哎，readme.md里面的latex公式无法在线渲染，本地查看是没毛病的
+
 ## 1. 学习笔记包括
 
 * [berkeley_CS294-112(2018)](./berkeley_CS294-112)
