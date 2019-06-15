@@ -13,7 +13,7 @@
 
   [课程视频](https://www.youtube.com/watch?v=FgzM3zpZ55o&list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
 
-* [RL Course by David Silver](./RL by David Silver) ([slides](./RL_by_David_Silver/slides))
+* [RL Course by David Silver](./RL_by_David_Silver) ([slides](./RL_by_David_Silver/slides))
 
   [课程主页](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)
 
