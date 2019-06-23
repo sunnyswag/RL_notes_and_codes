@@ -328,3 +328,31 @@ $$
    $$
    然而,behaviour policy $\mu$，$\color{red}\epsilon-greedy$ w.r.t Q(s,a)，意思为按概率进行贪心选择
 
+## Lecture 6: Value Function Approximation
+
+1. 选择 diﬀerentiable(可微分的) function approximators
+
+   例如：Linear combinations of features & Neural network
+
+2. 线性价值函数近似
+
+   用一个特征向量表示一个状态(目的是使其可微)
+   $$
+   x(S) =
+   \left(
+       \begin{matrix}
+       x_1(S)\\
+       \vdots\\
+       x_n(S)
+       \end{matrix}
+   \right)
+   $$
+   
+
+   使用特征的线性组合来代表value function，其中w为参数
+   $$
+   \hat{v}(S,{\bf{w}}) = {\bf{x}}(S)^T{\bf{w}} =\sum^n_{j=1}{\bf{x}}_j(S){\bf{w}}_j
+   $$
+   
+
+   
