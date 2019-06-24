@@ -334,7 +334,12 @@ $$
 
    例如：Linear combinations of features & Neural network
 
-2. 线性价值函数近似
+2. 线性价值函数近似,value function
+   $$
+   \hat{v}(s,{\bf {w}}) \approx v_\pi(s)\\
+   or \;\hat{q}(s,a,{\bf {w}}) \approx q_\pi(s,a)
+   $$
+   
 
    用一个特征向量表示一个状态(目的是使其可微)
    $$
@@ -353,6 +358,25 @@ $$
    $$
    \hat{v}(S,{\bf{w}}) = {\bf{x}}(S)^T{\bf{w}} =\sum^n_{j=1}{\bf{x}}_j(S){\bf{w}}_j
    $$
-   
+   目标函数为：
+   $$
+   J({\bf{w}}) = \mathbb{E}_\pi\big[(v_\pi(S)−{\bf{x}}(S)^T{\bf{w}})^2\big]
+   $$
 
-   
+3. MC,TD(0),TD(λ)更新时所采用的target
+
+   对于MC,目标值是$G_t$
+   $$
+   \Delta w = \alpha({\color{red}G_t}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+   $$
+   对于TD(0)，目标值是TD target $R_{t+1} + \gamma V(S_{t+1})$
+   $$
+   \Delta w = \alpha ({\color{red}{R_{t+1} + \gamma V(S_{t+1})}}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+   $$
+   对于TD(λ)，目标值是$G_t^\lambda$
+   $$
+   \;\Delta w = \alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})\\
+   =\alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\times(S_t)
+   $$
+
+4. 线性 Action-Value 函数的近似
