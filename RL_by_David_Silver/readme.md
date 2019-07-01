@@ -18,7 +18,7 @@
 
 1. Markov Process
 
-   马尔可夫过程可以定义为一个元组($S,P$)
+   马尔可夫过程可以定义为一个元组($S,P​$)
 
    $S$ 为有限的状态集
 
@@ -175,7 +175,7 @@ $$
     3）具体更新迭代步骤，进行单步更新操作。具体意思为：当前动作的最大的q，需要大于或等于当前所能采取的任意动作所获得的q
    $$
    \pi' (s)={argmax \\a\in A}\;q_\pi (s,a)\\
-   q_\pi (s,\pi' (s)) = {max \\a\in A} q_\pi (s,a) ≥ q_\pi (s,π(s)) = v_\pi (s)
+   \qquad\qquad\quad\ \ q_\pi (s,\pi' (s)) = {max \\a\in A} q_\pi (s,a) ≥ q_\pi (s,π(s)) = v_\pi (s)
    $$
     4）稳定之后
 
@@ -246,7 +246,7 @@ $$
 V(S_t) \leftarrow V(S_t) +\alpha(G_t −V(S_t))
 $$
 
-5. TD,学习时不使用完整的episodes,此处展示的位TD(0)
+5. TD,学习时不使用完整的episodes,此处展示的为TD(0)
    $$
    V(S_t) \leftarrow V(S_t) + \alpha ({\color{red}{R_{t+1} + \gamma V(S_{t+1})}}−V(S_t))
    $$
@@ -339,10 +339,10 @@ $$
    \hat{v}(s,{\bf {w}}) \approx v_\pi(s)\\
    or \;\hat{q}(s,a,{\bf {w}}) \approx q_\pi(s,a)
    $$
-   
+
 
    用一个特征向量表示一个状态(目的是使其可微)
-   $$
+$$
    x(S) =
    \left(
        \begin{matrix}
@@ -351,32 +351,188 @@ $$
        x_n(S)
        \end{matrix}
    \right)
+$$
+
+
+   使用特征的线性组合来代表value function，其中w为参数
+$$
+   \hat{v}(S,{\bf{w}}) = {\bf{x}}(S)^T{\bf{w}} =\sum^n_{j=1}{\bf{x}}_j(S){\bf{w}}_j
+$$
+   目标函数为：
+$$
+   J({\bf{w}}) = \mathbb{E}_\pi\big[(v_\pi(S)−{\bf{x}}(S)^T{\bf{w}})^2\big]
+$$
+   在线性价值函数近似下，MC,TD(0),TD(λ)更新时所采用的target
+
+   对于MC,目标值是$G_t$
+$$
+   \Delta w = \alpha({\color{red}G_t}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+$$
+   对于TD(0)，目标值是TD target $R_{t+1} + \gamma V(S_{t+1})$
+$$
+\Delta w = \alpha ({\color{red}{R_{t+1} + \gamma \hat{v}(S_{t+1}，w)}}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+$$
+   对于TD(λ)，目标值是$G_t^\lambda​$
+$$
+\;\Delta w = \alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})\\
+   =\alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\times(S_t)
+$$
+
+3. 线性 Action-Value 函数的近似 
+
+   用一个特征向量表示一个状态(目的是使其可微)
+   $$
+   x(S) =
+   \left(
+       \begin{matrix}
+       x_1(S,A)\\
+       \vdots\\
+       x_n(S,A)
+       \end{matrix}
+   \right)
    $$
    
 
-   使用特征的线性组合来代表value function，其中w为参数
+   使用特征的线性组合来代表action-value function，其中w为参数
    $$
-   \hat{v}(S,{\bf{w}}) = {\bf{x}}(S)^T{\bf{w}} =\sum^n_{j=1}{\bf{x}}_j(S){\bf{w}}_j
+   \hat{q}(S,A,{\bf{w}}) = {\bf{x}}(S,A)^T{\bf{w}} =\sum^n_{j=1}{\bf{x}}_j(S,A){\bf{w}}_j
    $$
    目标函数为：
    $$
-   J({\bf{w}}) = \mathbb{E}_\pi\big[(v_\pi(S)−{\bf{x}}(S)^T{\bf{w}})^2\big]
+   J({\bf{w}}) = \mathbb{E}_\pi\big[(q_\pi(S,A)-\hat{q}(S,A,\bf{w}))^2\big]
+   $$
+   对于TD(0)，目标值是TD target $R_{t+1} + \gamma Q(S_{t+1},A_{t+1})$
+   $$
+   \Delta w = \alpha ({\color{red}{R_{t+1} + \gamma \hat{q}(S_{t+1}，A_{t+1},w)}}-\hat{q}(S_t,A_t,{\bf{w}}))\nabla_w \hat{q}(S_t,A_t,{\bf{w}})
+   $$
+   对于MC、TD(λ)也类似
+
+4. 批量强化学习
+
+   记忆储存与回放
+
+   DQN
+
+## Lecture 7: Policy Gradient Methods
+
+1. 对policy进行参数化
+   $$
+   \pi_\theta(s,a)=\mathbb{P}[a\;|\;s,\theta]\
    $$
 
-3. MC,TD(0),TD(λ)更新时所采用的target
+2. policy的优缺点
 
-   对于MC,目标值是$G_t$
+   优点：更好的收敛性
+
+   ​	   在高维和连续的动作空间更有效
+
+   ​	   能学到随机的 policies
+
+   缺点：很容易收敛到局部最优而不是全局最优
+
+   ​	   无法对一个policy做出准确的评估(低效的&高方差)
+
+3. optimal deterministic policy&stochastic policy
+
+   最优的确定性policy : Value-based RL 会学到近似确定性policy
+
+   <img src="../assets/deterministic_policy.png" width=500>
+
+   最优的随机policy:在某个state会有多少概率采取某个action
+
+   <img src="../assets/stochastic_policy.png" width=500>
+
+4. Monte-Carlo Policy Gradient
+
+   目标函数为($\alpha$ 为步长)：
    $$
-   \Delta w = \alpha({\color{red}G_t}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+   \Delta\theta=\alpha\nabla_\theta J(\theta)=\alpha
+   \left(
+   	\begin{matrix}
+   	\frac{\partial J(\theta)}{\partial \theta_1}\\
+   	\vdots\\
+   	\frac{\partial J(\theta)}{\partial \theta_n}\\
+   	\end{matrix}
+   \right)
    $$
-   对于TD(0)，目标值是TD target $R_{t+1} + \gamma V(S_{t+1})$
+   由此梯度定义为$\nabla_\theta\pi_\theta(s,a)​$：
    $$
-   \Delta w = \alpha ({\color{red}{R_{t+1} + \gamma V(S_{t+1})}}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})
+   \nabla_\theta\pi_\theta(s,a)=\pi_\theta(s,a)\frac{\nabla_\theta\pi_\theta(s,a)}{\pi_\theta(s,a)}\\
+   \qquad\qquad\quad\; =\pi_\theta(s,a)\underbrace{\nabla_\theta log\pi_\theta(s,a)}_{score \;function}
    $$
-   对于TD(λ)，目标值是$G_t^\lambda$
+   Softmax Policy:
    $$
-   \;\Delta w = \alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\nabla_w \hat{v}(S_t,{\bf{w}})\\
-   =\alpha({\color{red}G_t^\lambda}-\hat{v}(S_t,{\bf{w}}))\times(S_t)
+   \pi_\theta(s,a) \propto e^{\phi(s,a)^T\theta }
+   $$
+   ​	score function:
+   $$
+   \nabla_\theta log\pi_\theta(s,a)=\phi(s,a)-\mathbb{E}_{\pi\theta}[\phi(s,·)]
+   $$
+   Gaussian Policy:
+   $$
+   a \sim \mathcal{N}(\mu(s),\sigma^2)
+   $$
+   ​	score function:
+   $$
+   \nabla_\theta log\pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}
+   $$
+   Policy Gradient:
+   $$
+   \nabla_\theta J(\theta)=\mathbb{E}_{\pi_\theta}[\underbrace{\nabla_\theta log\pi_\theta(s,a)}_{score\;function}\underbrace{Q^{\pi_\theta(s,a)}}_{long-term\\\;\;\;value}]
+   $$
+   使用$v_t$这个unbiased sample代替 $Q^{\pi_\theta}(s_t,a_t)$, $\Delta\theta_t$可以表示为：
+   $$
+   \Delta\theta_t=\alpha\nabla_\theta log\pi_\theta(s_t,a_t)v_t
+   $$
+   更新函数：
+   $$
+   \theta \leftarrow \theta+\alpha\Delta\theta_t\\
+   \qquad\qquad\qquad\leftarrow \theta+\alpha\nabla_\theta log\pi_\theta(s_t,a_t)v_t
    $$
 
-4. 线性 Action-Value 函数的近似
+5. Actor-critic
+
+   Actor :更新policy的 $\theta$ 参数，被critic直接指导
+
+   Critic :更新action-value函数的参数w
+
+   使用baseline来降低方差：
+
+   ​	用advantage function($A^{\pi_\theta}(s,a)$)来重写policy gradient
+   $$
+   A^{\pi_\theta}(s,a)=\overbrace{Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)}^{在s采取动作a是否可行}\\
+   \qquad\quad\;\ \;\nabla_\theta J(\theta)=\mathbb{E}[\nabla_{\pi_\theta}log\pi_\theta(s,a){\color{red}{A^{\pi_\theta}(s,a)}}]
+   $$
+   ​	确保$V^{\pi_\theta}(s)$和$Q^{\pi_\theta}(s,a)$ 的准确性，使用两个函数的approximators和两个参数的向量来估计(和前边的差不多)：
+   $$
+   \; V_v(s) \approx V^{\pi_\theta}(s)\\
+   Q_w(s,a) \approx Q^{\pi_\theta}(s,a)\\
+   \qquad\qquad A(s,a) = Q_w(s,a)-V_v(s)
+   $$
+   
+
+   ​	TD error $\delta^{\pi_\theta}$ 是 advantage function的无偏估计
+   $$
+   \qquad\qquad\;\delta^{\pi_\theta}=r+\gamma V^{\pi_\theta}(s')-V^{\pi_\theta}(s)\\
+   \;\\
+   \qquad\;\;\mathbb{E}_{\pi_\theta}[\delta^{\pi_\theta}|s,a]=\mathbb{E}_{\pi_\theta}[r+\gamma V^{\pi_\theta}(s')|s,a]-V^{\pi_\theta}(s)\\
+   \qquad\qquad=Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)\\
+   =A^{\pi_\theta}(s,a)\\
+   $$
+   ​	所以可以使用TD error来计算policy gradient
+   $$
+   \nabla_\theta J(\theta)=\mathbb{E}[\nabla_{\pi_\theta}log\pi_\theta(s,a){\color{red}\delta^\pi_\theta}]
+   $$
+   ​	将TD error简化,这将只需要 critic 的参数 v
+   $$
+   \delta_v = r+\gamma V_v(s')-V_v(s)
+   $$
+   
+
+
+
+
+
+公式解释：
+
+$\mathbb{E}$ : expected value(期望值)
