@@ -4,6 +4,8 @@
 
 ## 1. 学习笔记包括
 
+**RL**：
+
 * [berkeley_CS294-112(2018)](./berkeley_CS294-112)
 
   [课程主页](http://rail.eecs.berkeley.edu/deeprlcourse/)
@@ -21,6 +23,12 @@
   [课程主页](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)
 
   [课程视频](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)
+
+**DL**：
+
+* [Spinning Up as a Deep RL Researcher](https://spinningup.openai.com/en/latest/spinningup/spinningup.html#the-right-background)
+
+  之前看的《[动手学深度学习](<https://zh.gluon.ai/>)》(没看完，边敲边看看到了优化算法)，也有些遗忘，准备通过这个复习一遍，感觉系统的学还要等到系统学完机器学习吧。笔记[在此](./deep_learning/Spinning_Up_as_a_Deep_RL_Researcher.md)
 
 ## 2.强化学习资料
 
