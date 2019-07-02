@@ -509,7 +509,7 @@ $$
    Q_w(s,a) \approx Q^{\pi_\theta}(s,a)\\
    \qquad\qquad A(s,a) = Q_w(s,a)-V_v(s)
    $$
-   
+
 
    ​	TD error $\delta^{\pi_\theta}$ 是 advantage function的无偏估计
    $$
@@ -527,7 +527,113 @@ $$
    $$
    \delta_v = r+\gamma V_v(s')-V_v(s)
    $$
+
+
+## Lecture 8: Integrating Learning and Planning
+
+1. Model-Baesd Reinforcement Learning
+
+   model $\mathcal{M}=\left \langle \mathcal{P}_\eta,\mathcal{R}_\eta \right \rangle$ 来代表状态的转化
+   $$
+   S_{t+1} \sim P_\eta(S_{t+1} | S_t,A_t) \\
+   R_{t+1} = R_\eta(R_{t+1} | S_t,A_t) 
+   $$
+   简单理解：通过已知的数据来进行学习，也就是你知道了state和reward的转化。这其实就是一个监督学习的问题
+
+2. Table Lookup Model
+
+3. 经历来源：
+
+   真实经历：对环境进行采样(true MDP)
+
+   模拟经历：对模型进行采样(approximate MDP)
+
+4. Dyna-Q Algorithm，用到了model-based来plan和Q-Learning来learn
+
+   <img src="../assets/Dyna_Q_Algorithm.png">
+
+   5.Simulation-Based Search
+
+   ​	进行forward search 操作
+
+   6.简单的蒙特卡洛搜索
+
+   ​	先sample出在某个state所采取的action，然后通过验证后，选择一个值最高的action
+   $$
+   Monte-Carlo\;evaluation:Q({\color{red}{s_t,a}})=\frac{1}{K}\sum^{K}_{k=1}G_t \rightarrow q_\pi(s_t,a)\\
+   \qquad\qquad\;\; maximum\;value\;:a_t={argmax\\a \in \mathcal{A}}\;Q(s_t,a)
+   $$
+   7.TD Search：对于每次的simulation,使用Sarsa来更新action-values
+
+## Lecture 9: Exploration and Exploitation
+
+1. 定义
+
+   Exploration:获取更多的信息
+
+   Exploitation:在当前的信息下做出最佳的决定
+
+2. Regret
+
+   action-value是动作a的reward的均值
+   $$
+   Q(a)=\mathbb{E}[r|a]
+   $$
+   optimal value 定义为 $V^*​$:
+   $$
+   V^*=Q(a^*)={max\\a\in A}Q(a)
+   $$
+   regret定义为对于一个动作的opportunity loss:
+   $$
+   I_t=\mathbb{E}[V^*-Q(a_t)]
+   $$
+   总的regret为opportunity loss 的总和：
+   $$
+   L_t=\mathbb{E}\bigg[\sum^t_{\tau=1}V^*-Q(a_\tau)\bigg]
+   $$
+   定义$N_t(a)$ 为action a 被选择的次数，定义 gap $\Delta_a=V^*-Q(a)$
+
+   regret变成了可用次数和gap表示的函数：
+   $$
+   \quad L_t=\mathbb{E}\bigg[\sum^t_{\tau=1}V^*-Q(a_\tau)\bigg]\\
+   \qquad\qquad\;\;=\sum_{a\in A}\mathbb{E}[N_t(a)](V^*-Q(a_t))\\
+   \;l=\sum_{a\in A}\mathbb{E}[N_t(a)]\Delta_a
+   $$
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
