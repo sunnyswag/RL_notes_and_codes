@@ -24,6 +24,8 @@
 
   [课程视频](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)
 
+* [经典算法阅读](./algorithm_reading)
+
 **DL**：
 
 * [Spinning Up as a Deep RL Researcher](https://spinningup.openai.com/en/latest/spinningup/spinningup.html#the-right-background)
