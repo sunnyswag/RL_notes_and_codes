@@ -31,7 +31,7 @@
 
    马尔可夫奖励过程可以定义为一个元组($S,P,{\color{red}R, \gamma}​$)
 
-   $S $ 为有限的状态集
+   $S ​$ 为有限的状态集
 
    $P​$ 为状态转移矩阵
 
@@ -39,7 +39,7 @@ $$
 P_{ss'} = \mathbb{P}[S_{t+1} = s' | S_t = s]
 $$
 
-​	   **${\color{red}R \;为奖励函数，R_s = \mathbb{E}[R_{t+1}\;|\;S_t=s]}$**，可以理解为在状态t可获得的下一个状态的奖励
+​	   **${\color{red}R \;为奖励函数，R_s = \mathbb{E}[R_{t+1}\;|\;S_t=s]}​$**，可以理解为在状态t可获得的下一个状态的奖励
 
 ​	   $\color{red}{\gamma\;为衰减因子,\gamma \in [0,1]}​$
 
@@ -259,9 +259,9 @@ $$
 
 ## Lecture 5: Model Free Control
 
-1. On-policy learning：学习来自自己当前的$ \pi $ 所 sample的经历
+1. On-policy learning：学习来自自己当前的$ \pi ​$ 所 sample的经历
 
-   Off-policy learning：学习来自$ \mu $ 已有的经历
+   Off-policy learning：学习来自$ \mu ​$ 已有的经历
 
 2. 迭代更新(贪婪策略),第一个公式使用MDP模型，第二个公式使用$Q(s,a)$,进行更加直观的表示
    $$
@@ -287,7 +287,7 @@ $$
 
    4）提出新的算法Sarsa(on-policy)
 
-   ​      **其中，Q的更新都为 $\epsilon$ -greedy**
+   ​      **其中，Q的更新都为 $\epsilon​$ -greedy**
    $$
    Q(S,A) \leftarrow Q(S,A) + \alpha\underbrace{(R + \gamma Q(S',A')−Q(S,A))}_{TD \;error}
    $$
@@ -512,21 +512,21 @@ $$
 
 
    ​	TD error $\delta^{\pi_\theta}$ 是 advantage function的无偏估计
-   $$
+$$
    \qquad\qquad\;\delta^{\pi_\theta}=r+\gamma V^{\pi_\theta}(s')-V^{\pi_\theta}(s)\\
    \;\\
    \qquad\;\;\mathbb{E}_{\pi_\theta}[\delta^{\pi_\theta}|s,a]=\mathbb{E}_{\pi_\theta}[r+\gamma V^{\pi_\theta}(s')|s,a]-V^{\pi_\theta}(s)\\
    \qquad\qquad=Q^{\pi_\theta}(s,a)-V^{\pi_\theta}(s)\\
    =A^{\pi_\theta}(s,a)\\
-   $$
+$$
    ​	所以可以使用TD error来计算policy gradient
-   $$
+$$
    \nabla_\theta J(\theta)=\mathbb{E}[\nabla_{\pi_\theta}log\pi_\theta(s,a){\color{red}\delta^\pi_\theta}]
-   $$
+$$
    ​	将TD error简化,这将只需要 critic 的参数 v
-   $$
+$$
    \delta_v = r+\gamma V_v(s')-V_v(s)
-   $$
+$$
 
 
 ## Lecture 8: Integrating Learning and Planning
@@ -573,6 +573,8 @@ $$
 
    Exploitation:在当前的信息下做出最佳的决定
 
+   有三种方式可以达到exploration的目的，第一种就是类似ϵ−ϵ−greedy算法在一定概率基础下随机选择一些action，第二种是更加倾向选择更加具有不确定性的状态/动作，这种方法就需要一种方法来衡量这种不确定性，第三种就是收集一些状态信息来确定是否值得到达这个状态(by chenrudan)
+
 2. Regret
 
    action-value是动作a的reward的均值
@@ -599,42 +601,6 @@ $$
    \qquad\qquad\;\;=\sum_{a\in A}\mathbb{E}[N_t(a)](V^*-Q(a_t))\\
    \;l=\sum_{a\in A}\mathbb{E}[N_t(a)]\Delta_a
    $$
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

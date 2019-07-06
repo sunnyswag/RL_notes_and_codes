@@ -88,5 +88,7 @@
 
 ## 3.Logs
 
-​	今天(2019/6/12)，被CS234 Lecture2的notes和Assignments所吓到，准备老老实实看[RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)了，江湖有缘再见吧
+​	Today(2019/6/12)，被CS234 Lecture2的notes和Assignments所吓到，准备老老实实看[RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)了，江湖有缘再见吧
+
+​	Today(2019/7/6)，到现在还有第九章的后一段和第十章没看，感觉已经差不多了，后边都是应用的，而且第十章的PPT也非常不清晰。由于我是直接在youtube上看的，没有字幕，确实有一点点难受。感觉讲的都比较基础把，所以用到了很多公式，在letax公式方面，自己也学到了一些。这门课相当于是鼻祖，所以会比其他课讲的都要好(个人感觉,因为其他课程也是在这门课上有所改进和删减)。算是把基础给通关了，之后的话自己可以根据别人的思路来写一些代码，可以从最简单最基础的写起。如果突然又想补补基础了，就把书或者berkeley的教程看一遍，加油鸭
 
