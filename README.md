@@ -26,6 +26,8 @@
 
 * [经典算法阅读](./algorithm_reading)
 
+* [日常的困惑记录](./other_notes.md)
+
 **DL**：
 
 * [Spinning Up as a Deep RL Researcher](https://spinningup.openai.com/en/latest/spinningup/spinningup.html#the-right-background)
