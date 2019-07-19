@@ -1,1 +1,1 @@
-
+t commit -m "git reset --soft HEAD^ || git reset HEAD path/to/unwanted_file || don't use git rm --cached file ,it will return to ready to commit|| edit .gitignore ||then, add, Commit and push ||for file too large to push.Although you have deleted it, the deleted detail will be committed, which means the large file will be committed but itwasn't your wish || if something make you unhappy, try to use git reset --hard origin/<brach_name>, clean you local commits"
