@@ -23,7 +23,7 @@
   [课程主页](<http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html>)
 
   [课程视频](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-)
- 
+
 * [经典算法实现](./algorithm_implement)
 
 * [经典算法阅读](./algorithm_reading)
@@ -101,3 +101,5 @@
 ​	Today(2019/7/6)，到现在还有第九章的后一段和第十章没看，感觉已经差不多了，后边都是应用的，而且第十章的PPT也非常不清晰。由于我是直接在youtube上看的，没有字幕，确实有一点点难受。感觉讲的都比较基础把，所以用到了很多公式，在letax公式方面，自己也学到了一些。这门课相当于是鼻祖，所以会比其他课讲的都要好(个人感觉,因为其他课程也是在这门课上有所改进和删减)。算是把基础给通关了，之后的话自己可以根据别人的思路来写一些代码，可以从最简单最基础的写起。如果突然又想补补基础了，就把书或者berkeley的教程看一遍，加油鸭
 
 ​	Today(2019/7/13)，实现了Q-learning,policy gradient, DQN,准备开始学习ML。完成其中的作业并做一些kaggle的实战。
+
+​	Today(2019/7/24)，继续实现了double,dueling DQN。理清了policy gradient中的REINFORCE和REINFORCE with baseline 的关系。今天终于把A2C完全理解了，准备过会实现它吧。ML不准备现在学，学CS231n到了Assignment1该交了，准备昨晚Assignment1再继续学吧，pytorch的基础教程学完了，准备开始学cv方向的。感觉这段时间确实做了很多事情，有点充实噢，继续加油鸭。突然看到了6/12号被notes2吓到的自己，感觉现在一点都不怂噢，因为我在翻译它噢，嘻嘻。准备学完dl和pytorch就去kaggle敲敲for beignner的kernel，稳！
