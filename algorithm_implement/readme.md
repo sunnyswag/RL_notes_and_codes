@@ -9,6 +9,8 @@
 **A2C**<br>
 **DDPG**<br>
 **PPO**<br>
+**TD3**<br>
+**SAC**<br>
 
 ## 算法复现的步骤:
 1. 查看算法伪代码理解算法思路
@@ -23,8 +25,51 @@
 在DPG之前很难(或者无法)做到连续动作空间的决策，因为为了exploration，使用的都是随机策略<br>。
 而最早使用随机策略进行连续动作空间决策的是A3C， why?
 **
+**记得附上参考连接，体现素质**
 
 ## Tag 2:
+如何调参debug:
+1. 首先检查一遍代码的结构与实现是否有误
+2. 检查超参设置是否合理
+3. 检查reward,loss(actor&&critic),episode_step是否正常
+reward是否达到预期<br>
+loss是否有波动，波动范围如何<br>
+在step较多的episode，reward是增加还是减少
+4. 检查action。连续动作的action是否一直处在low和high action处。如此就需要更改defaut的网络初始化权重<br>
+貌似nn.Sequential和手动定义时nn的权重的初始化时不一样的<br>
+5. 权重初始化方式(和seed有关,defaut seed(1)):
+默认权重初始化方式:
+        ```
+        # in_dim神经元数目
+        # 如nn.Linner(400, 300),stdv = 1./sqrt(400)=0.05
+        stdv = 1. / math.sqrt(self.weight.size(1))
+        self.weight.data.uniform_(-stdv, stdv)
+        if self.bias is not None:
+            self.bias.data.uniform_(-stdv, stdv)
+        ```
+手动权重初始化:<br>
+方式一(手动定义nn):
+        ```
+        init_w = 3e-3
+        # 随机生成-init_w 和init_w之间的数
+        self.linear3.weight.data.uniform_(-init_w, init_w)
+        self.linear3.bias.data.uniform_(-init_w, init_w)
+        ```
+方式二(使用nn.Sequential定义nn):
+        ```
+        def init_weights(m):
+            if isinstance(m, nn.Linear):
+                nn.init.normal_(m.weight, mean=0., std=0.1)
+                nn.init.constant_(m.bias, 0.1)
+        # 类中:
+        self.apply(init_weights)
+        ```
+
+## Tag 3:
+**对输入nn的state做归一化**<br>
+**如果看到Loss function非常平稳无偏差，那一定有问题**
+
+## Tag 4:
 **Actor_Critic计算TD_target的两种方式:<br>
 1. 计算 $G_t$,直接 TD_target = $[G_t], t=1,2,3,\dots$(此时 $G_t$ 为TD_target的无偏估计)
     1. G_t 初始化为0
