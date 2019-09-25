@@ -1,4 +1,4 @@
-## 暂且记为力的方向向量问题？
+## 方向向量噪声
 
 1. 问题：```Pendulum-v0``` 环境收敛非常慢，```MountainCarContinuous-v0``` 环境学习非常快
 
@@ -113,6 +113,7 @@ class Test:
 
 plt.figure(figsize=(16, 6))
 
+# 左 图
 plt.subplot(121)
 test = Test()
 right_sample = [test.sample_right() for _ in range(1000)]
@@ -122,6 +123,7 @@ plt.plot(right_sample, label="a")
 plt.plot(error_sample, label="b")
 plt.legend()
 
+# 右 图
 plt.subplot(122)
 test1 = Test()
 right_sample = [test1.sample_right()[0] for _ in range(1000)]
@@ -154,7 +156,7 @@ error_sample = [test1.sample_error()[0] for _ in range(1000)]
 
 4. Experiment 2
 
-* use uniform noise
+* 每个episode使用不变的噪声变量
 
 ```python
 for episode in range(episodes):
@@ -166,3 +168,33 @@ for episode in range(episodes):
 ```
 
 ![episod_uniform_noise.png](../assets/episod_uniform_noise.png)
+
+​	发现并不是每回合不变的噪声，每回合的噪声都在distrubution，但维持一个短期的噪声向量
+
+* 可视化噪声向量
+
+  存在方向噪声向量：
+
+![ddpg_noise_vector](../assets/ddpg_noise_vector.png)
+
+​	普通高斯噪声：
+
+```python
+for episode in range(episodes):
+	for step in range(steps):
+        action1 = policy_net.get_action(state)
+        noise = np.random.randn(1)
+        noises.append(noise)
+        action = action1 + noise
+```
+
+![ddpg_noise_no_vector](../assets/ddpg_noise_no_vector.png)
+
+​	**噪声向量确实比单纯的高斯噪声有着更好的结果**
+
+4. 结论
+
+   * 噪声向量维持了一个短暂的方向推力，让agent在某种巧合之下借助推力达成目标，获取奖励值。
+
+   * 在奖励值稀疏的环境下，刚训练时。由于nn还没有收敛，agent在高斯噪声中会漂浮不定，无法采样到TD error较高的路径，学习速率较慢。相反，在向量噪声下，不管nn有没有收敛，agent都会获得一个方向推力，让他更有自信，相信自己的所作所为，更容易采样到TD error高的路径，学习速率较快。
+   * 在类中调用方法+=和=...+...没有区别，类外调用才有区别。所以其实方向向量一直存在，只是我调参时，噪声幅度出现有不同而已...。
