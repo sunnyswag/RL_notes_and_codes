@@ -195,6 +195,26 @@ for episode in range(episodes):
 4. 结论
 
    * 噪声向量维持了一个短暂的方向推力，让agent在某种巧合之下借助推力达成目标，获取奖励值。
-
-   * 在奖励值稀疏的环境下，刚训练时。由于nn还没有收敛，agent在高斯噪声中会漂浮不定，无法采样到TD error较高的路径，学习速率较慢。相反，在向量噪声下，不管nn有没有收敛，agent都会获得一个方向推力，让他更有自信，相信自己的所作所为，更容易采样到TD error高的路径，学习速率较快。
+* 在奖励值稀疏的环境下，刚训练时。由于nn还没有收敛，agent在高斯噪声中会漂浮不定，无法采样到TD error较高的路径，学习速率较慢。相反，在向量噪声下，不管nn有没有收敛，agent都会获得一个方向推力，让他更有自信，相信自己的所作所为，更容易采样到TD error高的路径，学习速率较快。
    * 在类中调用方法+=和=...+...没有区别，类外调用才有区别。所以其实方向向量一直存在，只是我调参时，噪声幅度出现有不同而已...。
+
+5. 结语
+
+   结束了，这是[Ornstein–Uhlenbeck process](https://en.wikipedia.org/wiki/Ornstein–Uhlenbeck_process)。简单来说，就是在一个高斯过程，马尔科夫过程暂时均匀过程中生成噪声。再见~~~
+
+6. Paper Reading
+
+   - 主要的噪声方式：ε-greedy, OU noise, parameter noise,  novelty search from evolution strategies, "rollout" in many different horizon lengths, efficiently coordinate exploration 
+
+7. 继续吧
+
+   * 测试：
+
+     方向向量噪声：收敛速度更快，Average reward 较高，学习效果更好
+
+     高斯噪声：收敛速度较慢，Average reward较低，学习效果较差
+
+     ![ddpg_noise_test.png](../assets/ddpg_noise_test.png)
+     
+     
+
