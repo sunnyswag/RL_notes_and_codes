@@ -208,13 +208,38 @@ for episode in range(episodes):
 
 7. 继续吧
 
-   * 测试：
+   * 测试1：
 
-     方向向量噪声：收敛速度更快，Average reward 较高，学习效果更好
+     ​	两种噪声的生成方式分别进行5次训练和5次测试，绘图如下
 
-     高斯噪声：收敛速度较慢，Average reward较低，学习效果较差
+     测试结果：
 
-     ![ddpg_noise_test.png](../assets/ddpg_noise_test.png)
+     ​	方向向量噪声：收敛速度更快，Average reward 较高，学习效果更好
      
+     ​	高斯噪声：收敛速度较慢，Average reward较低，学习效果较差
      
+     ![ddpg_noise_test.png](../assets/ddpg_noise_test_1.png)
+   
+   * 测试2：
+   
+     ​	进行噪声的大小和持续时间的测试，测试代码：
+   
+     ```python
+     test = True
+     if step % 200 == 0:
+     	test = not test
+     noise = abs(np.random.randn(1)) if test else -abs(np.random.randn(1))
+     ```
+   
+     测试结果：
+   
+     ​	每200个step改变一次噪声的方向，能比较好的收敛
+   
+     ![ddpg_noise_test_2](../assets/ddpg_noise_test_2.png)
+   
+     问题：依然无法获知何时需要噪声，需要多大的噪声，需要什么方向的噪声
+   
+     idea：1. pre-trained 获知需要噪声的方向，大小，持续时间的信息
+   
+     ​			2. 训练噪声sample的nn，来观察噪声生成的规律
 
