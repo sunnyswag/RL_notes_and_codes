@@ -11,6 +11,7 @@ sys.path.append("../utils/")
 from normalize_action import NormalizeActions
 from replay_buffer import ReplayBuffer
 from DDPG import DDPG
+from DDPG import PolicyNetwork
 
 def train_ddpg(ddpg, writer, current_model_dir):
     test = True
@@ -43,30 +44,32 @@ def train_ddpg(ddpg, writer, current_model_dir):
                 break
                 
         episode_end_time = datetime.now()
-        episode_delta_T = (train_end_time - train_start_time).seconds
+        episode_delta_T = (episode_start_time - episode_end_time).seconds
         
         writer.add_scalars("train_reward/update_step_{}".format(update_step),
                            {"noise_discount_{}".format(noise_discount):episode_reward}, episode)
-        print("Episode {}/{} , episode_reward {}, value_loss {}, policy_loss {}, {} seconds"
-              .format(episode + 1, train_episodes, episode_reward, value_loss, policy_loss, episode_delta_T))
+        if episode % print_internal == 0:
+            print("Episode {}/{} , episode_reward {}, value_loss {}, policy_loss {}, {} seconds"
+                  .format(episode + 1, train_episodes, episode_reward, value_loss, policy_loss, episode_delta_T))
         
     ddpg.save(current_model_dir)
+    return ddpg
 
-def test_ddpg(ddpg, writer, current_model_dir):
-    ddpg.load(current_model_dir)
+def test_ddpg(ddpg, writer):
     for test_episode in range(test_episodes):
         state = env.reset()
-        rewards = 0
+        episode_reward = 0
         for _ in range(test_steps):
             action = ddpg.get_action(state.flatten())
             next_state, reward, done, info = env.step(action)
             state = next_state
-            rewards += reward
+            episode_reward += reward
             if done: break
         writer.add_scalars("test_reward/update_step_{}".format(update_step),
-                           {"noise_discount_{}".format(noise_discount):rewards}, test_episode)
-        print("Episode {}/{} , episode_reward {}"
-              .format(test_episode + 1, test_episodes, episode_reward))
+                           {"noise_discount_{}".format(noise_discount):episode_reward}, test_episode)
+        if test_episode % print_internal == 0:
+            print("Episode {}/{} , episode_reward {}"
+                  .format(test_episode + 1, test_episodes, episode_reward))
 
 if __name__ == "__main__":
     
@@ -95,6 +98,7 @@ if __name__ == "__main__":
     train_steps = 1000
     test_episodes = 100
     test_steps = 100
+    print_internal = 10
 
     update_steps = [50, 100, 150, 200, 250, 300]
     noise_discounts = [0.1, 0.5, 1.0, 1.5, 2.0, 3.0]
@@ -102,7 +106,7 @@ if __name__ == "__main__":
     env = NormalizeActions(gym.make(env_name))
     in_dim = env.observation_space.shape[0]
     out_dim = env.action_space.shape[0]
-    device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     replay_buffer = ReplayBuffer(in_dim, batch_size, buffer_size, device)
     writer = SummaryWriter(plot_dir)
     
@@ -125,9 +129,9 @@ if __name__ == "__main__":
             # train
             
             print("=== START Train < update_step : {}, noise_discount : {} > ==="
-                 .format(update_step, noise_discount)
+                 .format(update_step, noise_discount))
             train_start_time = datetime.now()
-            train_ddpg(ddpg, writer, current_model_dir)
+            ddpg = train_ddpg(ddpg, writer, current_model_dir)
             train_end_time = datetime.now()
             
             train_delta_T = round((train_end_time - train_start_time).seconds/60)
@@ -137,9 +141,9 @@ if __name__ == "__main__":
             # test
             
             print("=== START Test < update_step : {}, noise_discount : {} > ==="
-                 .format(update_step, noise_discount)
+                 .format(update_step, noise_discount))
             test_start_time = datetime.now()
-            test_ddpg(ddpg, writer, current_model_dir)
+            test_ddpg(ddpg, writer)
             test_end_time = datetime.now()
             
             test_delta_T = round((test_end_time - test_start_time).seconds/60)

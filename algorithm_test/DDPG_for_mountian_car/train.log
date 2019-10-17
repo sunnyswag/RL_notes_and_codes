@@ -1,0 +1,970 @@
+nohup: ignoring input
+model_dir : ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model
+plot_dir : ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/tensorboard
+make model_dir and plot_dir succeed!
+DDPG network init finish
+
+========== START TRAIN AND TEST ==========
+
+test update steps : [50, 100, 150, 200, 250, 300]
+test noise discounts : [0.1, 0.5, 1.0, 1.5, 2.0, 3.0]
+
+=== START Train < update_step : 50, noise_discount : 0.1 > ===
+Episode 1/200 , episode_reward -2.659116211548559, value_loss 0.0001734983379719779, policy_loss -0.14418691396713257, 86386 seconds
+Episode 11/200 , episode_reward -1.0291961823042342, value_loss 1.640183836570941e-05, policy_loss -0.04752218350768089, 86383 seconds
+Episode 21/200 , episode_reward -1.0107298829500166, value_loss 1.0851647402887465e-07, policy_loss -0.01600550301373005, 86387 seconds
+Episode 31/200 , episode_reward -0.9924564546360722, value_loss 1.9264589923295716e-09, policy_loss -0.004911211784929037, 86386 seconds
+Episode 41/200 , episode_reward -1.020683946283337, value_loss 3.385083324758398e-09, policy_loss -0.0015202598879113793, 86387 seconds
+Episode 51/200 , episode_reward -0.9935107996393462, value_loss 1.713185149299079e-08, policy_loss -0.0010658088140189648, 86383 seconds
+Episode 61/200 , episode_reward -0.9429896743693453, value_loss 6.505419536395607e-10, policy_loss -0.0013177262153476477, 86386 seconds
+Episode 71/200 , episode_reward -1.0312008714429461, value_loss 6.522406170716977e-09, policy_loss -0.0013025486841797829, 86383 seconds
+Episode 81/200 , episode_reward -0.9446430001649755, value_loss 1.2717178421439712e-08, policy_loss -0.0013351490488275886, 86384 seconds
+Episode 91/200 , episode_reward -0.9193425183590509, value_loss 2.0260304545161034e-09, policy_loss -0.0012747390428557992, 86380 seconds
+Episode 101/200 , episode_reward -1.0393647429842658, value_loss 1.6628123322703914e-09, policy_loss -0.001201811246573925, 86380 seconds
+Episode 111/200 , episode_reward -0.9678589585137563, value_loss 2.5850816598449455e-08, policy_loss -0.001016514841467142, 86381 seconds
+Episode 121/200 , episode_reward -1.0590880345306604, value_loss 7.517190425687659e-09, policy_loss -0.0010828630765900016, 86384 seconds
+Episode 131/200 , episode_reward -1.0213665844275301, value_loss 8.969003317815805e-09, policy_loss -0.001310782739892602, 86380 seconds
+Episode 141/200 , episode_reward -0.960439702712715, value_loss 1.8923648426039108e-08, policy_loss -0.001100999303162098, 86382 seconds
+Episode 151/200 , episode_reward -0.9893433751993036, value_loss 1.5591426760774851e-10, policy_loss -0.0010649757459759712, 86383 seconds
+Episode 161/200 , episode_reward -0.9802786417154433, value_loss 5.565876648461199e-10, policy_loss -0.0008681990439072251, 86382 seconds
+Episode 171/200 , episode_reward -1.0328260669997404, value_loss 1.3024056277899376e-09, policy_loss -0.000693224836140871, 86383 seconds
+Episode 181/200 , episode_reward -1.0197598580493716, value_loss 1.778098224214375e-10, policy_loss -0.00064343202393502, 86379 seconds
+Episode 191/200 , episode_reward -0.9452762920791532, value_loss 3.635645673405463e-10, policy_loss -0.0005870626773685217, 86379 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_0.1 save succeed!
+=== END Train < update_step : 50, noise_discount : 0.1 > 55 minutes ===
+=== START Test < update_step : 50, noise_discount : 0.1 > ===
+Episode 1/100 , episode_reward -0.0008090781833303154
+Episode 11/100 , episode_reward -0.0008090781833303154
+Episode 21/100 , episode_reward -0.0008090781833303154
+Episode 31/100 , episode_reward -0.0008090781833303154
+Episode 41/100 , episode_reward -0.0008090781833303154
+Episode 51/100 , episode_reward -0.0008090781833303154
+Episode 61/100 , episode_reward -0.0008090781833303154
+Episode 71/100 , episode_reward -0.0008090781833303154
+Episode 81/100 , episode_reward -0.0008090781833303154
+Episode 91/100 , episode_reward -0.0008090781833303154
+=== END Test  < update_step : 50, noise_discount : 0.1 > 0 minutes ===
+=== START Train < update_step : 50, noise_discount : 0.5 > ===
+Episode 1/200 , episode_reward 91.47637978460439, value_loss 2.963193912464135e-09, policy_loss -0.00043546478264033794, 86391 seconds
+Episode 11/200 , episode_reward 92.93317550472928, value_loss 8.494534995406866e-06, policy_loss -0.025817470625042915, 86394 seconds
+Episode 21/200 , episode_reward -25.558217784539643, value_loss 0.008839525282382965, policy_loss 1.6168861389160156, 86380 seconds
+Episode 31/200 , episode_reward 84.60302696778422, value_loss 0.010292171500623226, policy_loss -1.9682327508926392, 86393 seconds
+Episode 41/200 , episode_reward 86.43661345255668, value_loss 0.2954089939594269, policy_loss -6.752745151519775, 86394 seconds
+Episode 51/200 , episode_reward 80.76095182873507, value_loss 0.24184435606002808, policy_loss -16.524534225463867, 86394 seconds
+Episode 61/200 , episode_reward 83.34805574765834, value_loss 3.821408987045288, policy_loss -22.01236343383789, 86393 seconds
+Episode 71/200 , episode_reward 85.49526920470966, value_loss 0.11231948435306549, policy_loss -24.90576171875, 86394 seconds
+Episode 81/200 , episode_reward 90.16414094996725, value_loss 0.14573907852172852, policy_loss -20.16272735595703, 86394 seconds
+Episode 91/200 , episode_reward 91.22167169177636, value_loss 0.1875862032175064, policy_loss -14.755790710449219, 86391 seconds
+Episode 101/200 , episode_reward 90.98541863541637, value_loss 0.08712600916624069, policy_loss -8.486433029174805, 86392 seconds
+Episode 111/200 , episode_reward 93.42783347727125, value_loss 0.06953567266464233, policy_loss -4.764810562133789, 86393 seconds
+Episode 121/200 , episode_reward -26.366615041582346, value_loss 0.14475205540657043, policy_loss -3.1088786125183105, 86378 seconds
+Episode 131/200 , episode_reward 92.71604657956043, value_loss 0.1305389255285263, policy_loss -2.690732955932617, 86393 seconds
+Episode 141/200 , episode_reward 93.19597474369911, value_loss 0.09643566608428955, policy_loss -2.8121261596679688, 86393 seconds
+Episode 151/200 , episode_reward 79.61709552743497, value_loss 0.10544907301664352, policy_loss -4.26524543762207, 86378 seconds
+Episode 161/200 , episode_reward 92.46336988364398, value_loss 13.882590293884277, policy_loss -3.8467836380004883, 86392 seconds
+Episode 171/200 , episode_reward -36.660877386924234, value_loss 0.09068339318037033, policy_loss -4.9013495445251465, 86374 seconds
+Episode 181/200 , episode_reward -60.893624106584255, value_loss 0.2387176752090454, policy_loss -4.042213439941406, 86375 seconds
+Episode 191/200 , episode_reward -42.80149561374313, value_loss 0.09596884250640869, policy_loss -4.433056354522705, 86371 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_0.5 save succeed!
+=== END Train < update_step : 50, noise_discount : 0.5 > 36 minutes ===
+=== START Test < update_step : 50, noise_discount : 0.5 > ===
+Episode 1/100 , episode_reward -0.08356449397538775
+Episode 11/100 , episode_reward -0.08356449397538775
+Episode 21/100 , episode_reward -0.08356449397538775
+Episode 31/100 , episode_reward -0.08356449397538775
+Episode 41/100 , episode_reward -0.08356449397538775
+Episode 51/100 , episode_reward -0.08356449397538775
+Episode 61/100 , episode_reward -0.08356449397538775
+Episode 71/100 , episode_reward -0.08356449397538775
+Episode 81/100 , episode_reward -0.08356449397538775
+Episode 91/100 , episode_reward -0.08356449397538775
+=== END Test  < update_step : 50, noise_discount : 0.5 > 0 minutes ===
+=== START Train < update_step : 50, noise_discount : 1.0 > ===
+Episode 1/200 , episode_reward 90.43277131306722, value_loss 0.13623468577861786, policy_loss -3.539393424987793, 86395 seconds
+Episode 11/200 , episode_reward -56.4760501323847, value_loss 0.1320466697216034, policy_loss -4.05081033706665, 86371 seconds
+Episode 21/200 , episode_reward -58.29474267674498, value_loss 0.15550784766674042, policy_loss -1.8308578729629517, 86373 seconds
+Episode 31/200 , episode_reward 91.55185166010646, value_loss 0.1292407065629959, policy_loss -1.644684910774231, 86395 seconds
+Episode 41/200 , episode_reward 89.06848888805936, value_loss 0.1807531863451004, policy_loss -2.0039749145507812, 86394 seconds
+Episode 51/200 , episode_reward 89.2941825882243, value_loss 1.0197172164916992, policy_loss -9.843549728393555, 86395 seconds
+Episode 61/200 , episode_reward 89.66501893593997, value_loss 0.6472046971321106, policy_loss -4.902889728546143, 86394 seconds
+Episode 71/200 , episode_reward 89.52626838139996, value_loss 0.29694288969039917, policy_loss -5.1281023025512695, 86394 seconds
+Episode 81/200 , episode_reward 89.50689241770559, value_loss 0.843154788017273, policy_loss -18.128543853759766, 86395 seconds
+Episode 91/200 , episode_reward 80.4184846983501, value_loss 0.3379814028739929, policy_loss -22.181804656982422, 86392 seconds
+Episode 101/200 , episode_reward 82.03524977510337, value_loss 4.4375901222229, policy_loss -25.555461883544922, 86392 seconds
+Episode 111/200 , episode_reward 87.9824869228437, value_loss 2.932878017425537, policy_loss -26.77349853515625, 86394 seconds
+Episode 121/200 , episode_reward 88.04944733403218, value_loss 0.3088482916355133, policy_loss -27.940937042236328, 86394 seconds
+Episode 131/200 , episode_reward 87.32203391333377, value_loss 0.30391764640808105, policy_loss -31.87056541442871, 86392 seconds
+Episode 141/200 , episode_reward 87.35342716866165, value_loss 6.405002117156982, policy_loss -33.70237731933594, 86393 seconds
+Episode 151/200 , episode_reward 88.45289752146607, value_loss 0.2673799991607666, policy_loss -32.82979965209961, 86394 seconds
+Episode 161/200 , episode_reward 80.78128213587476, value_loss 0.5148640871047974, policy_loss -33.64894104003906, 86392 seconds
+Episode 171/200 , episode_reward 87.3336006846415, value_loss 0.4481951594352722, policy_loss -32.75297546386719, 86393 seconds
+Episode 181/200 , episode_reward 87.63155057716475, value_loss 0.4267716705799103, policy_loss -33.29025650024414, 86394 seconds
+Episode 191/200 , episode_reward 88.28370154591843, value_loss 15.332499504089355, policy_loss -35.27178955078125, 86393 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_1.0 save succeed!
+=== END Train < update_step : 50, noise_discount : 1.0 > 24 minutes ===
+=== START Test < update_step : 50, noise_discount : 1.0 > ===
+Episode 1/100 , episode_reward -9.999995231629004
+Episode 11/100 , episode_reward -9.999995231629004
+Episode 21/100 , episode_reward -9.999995231629004
+Episode 31/100 , episode_reward -9.999995231629004
+Episode 41/100 , episode_reward -9.999995231629004
+Episode 51/100 , episode_reward -9.999995231629004
+Episode 61/100 , episode_reward -9.999995231629004
+Episode 71/100 , episode_reward -9.999995231629004
+Episode 81/100 , episode_reward -9.999995231629004
+Episode 91/100 , episode_reward -9.999995231629004
+=== END Test  < update_step : 50, noise_discount : 1.0 > 0 minutes ===
+=== START Train < update_step : 50, noise_discount : 1.5 > ===
+Episode 1/200 , episode_reward 87.42216506124346, value_loss 0.33962976932525635, policy_loss -32.236785888671875, 86394 seconds
+Episode 11/200 , episode_reward 87.30154216508657, value_loss 0.7294090390205383, policy_loss -34.15740966796875, 86394 seconds
+Episode 21/200 , episode_reward 90.21679196078524, value_loss 1.3605254888534546, policy_loss -33.85416793823242, 86395 seconds
+Episode 31/200 , episode_reward 87.41675119418295, value_loss 0.7153447866439819, policy_loss -32.04932403564453, 86394 seconds
+Episode 41/200 , episode_reward 88.04667713611185, value_loss 0.6840015053749084, policy_loss -31.126840591430664, 86394 seconds
+Episode 51/200 , episode_reward 87.83217533279608, value_loss 0.7785942554473877, policy_loss -29.89896011352539, 86393 seconds
+Episode 61/200 , episode_reward 88.93737189516759, value_loss 0.6971248984336853, policy_loss -28.867334365844727, 86394 seconds
+Episode 71/200 , episode_reward 87.3782603200012, value_loss 0.6549201607704163, policy_loss -25.2335147857666, 86394 seconds
+Episode 81/200 , episode_reward 88.01054841569879, value_loss 1.3509435653686523, policy_loss -30.87751007080078, 86394 seconds
+Episode 91/200 , episode_reward 87.16090124166959, value_loss 4.337283611297607, policy_loss -30.246017456054688, 86394 seconds
+Episode 101/200 , episode_reward 87.39304888155769, value_loss 1.0019100904464722, policy_loss -28.730831146240234, 86393 seconds
+Episode 111/200 , episode_reward 87.45252546911534, value_loss 1.2467014789581299, policy_loss -30.87737274169922, 86393 seconds
+Episode 121/200 , episode_reward 87.5316724271576, value_loss 0.653127908706665, policy_loss -24.73318862915039, 86395 seconds
+Episode 131/200 , episode_reward 88.14444486487089, value_loss 0.5544993877410889, policy_loss -26.953920364379883, 86394 seconds
+Episode 141/200 , episode_reward 87.49758184411283, value_loss 0.7204819321632385, policy_loss -27.50520133972168, 86394 seconds
+Episode 151/200 , episode_reward 87.36809319342318, value_loss 0.9832717776298523, policy_loss -28.574607849121094, 86392 seconds
+Episode 161/200 , episode_reward 87.37913922661613, value_loss 1.1023921966552734, policy_loss -26.22000503540039, 86393 seconds
+Episode 171/200 , episode_reward 87.82260344322356, value_loss 0.7947797775268555, policy_loss -27.448612213134766, 86392 seconds
+Episode 181/200 , episode_reward 87.3510043333708, value_loss 0.5247814059257507, policy_loss -29.020278930664062, 86394 seconds
+Episode 191/200 , episode_reward 88.24320787928097, value_loss 0.9135761260986328, policy_loss -29.919506072998047, 86394 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_1.5 save succeed!
+=== END Train < update_step : 50, noise_discount : 1.5 > 19 minutes ===
+=== START Test < update_step : 50, noise_discount : 1.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 50, noise_discount : 1.5 > 0 minutes ===
+=== START Train < update_step : 50, noise_discount : 2.0 > ===
+Episode 1/200 , episode_reward 85.87281613438242, value_loss 0.7818209528923035, policy_loss -26.22220230102539, 86391 seconds
+Episode 11/200 , episode_reward 86.36812314327555, value_loss 1.0312048196792603, policy_loss -25.004535675048828, 86393 seconds
+Episode 21/200 , episode_reward 89.10986179341072, value_loss 1.5366019010543823, policy_loss -27.027313232421875, 86395 seconds
+Episode 31/200 , episode_reward 86.58965778066923, value_loss 0.839666485786438, policy_loss -27.537992477416992, 86394 seconds
+Episode 41/200 , episode_reward 87.07616935888781, value_loss 0.40622106194496155, policy_loss -22.90938949584961, 86394 seconds
+Episode 51/200 , episode_reward 85.78068691627966, value_loss 0.5493044257164001, policy_loss -25.303085327148438, 86394 seconds
+Episode 61/200 , episode_reward 93.00896545608053, value_loss 1.8236443996429443, policy_loss -29.108673095703125, 86396 seconds
+Episode 71/200 , episode_reward 86.43828531052722, value_loss 3.5369210243225098, policy_loss -29.71147918701172, 86392 seconds
+Episode 81/200 , episode_reward 92.4530597955894, value_loss 2.661555290222168, policy_loss -25.02309799194336, 86396 seconds
+Episode 91/200 , episode_reward 89.77108008123184, value_loss 3.039053201675415, policy_loss -27.52764129638672, 86395 seconds
+Episode 101/200 , episode_reward 87.4696294957985, value_loss 3.6934592723846436, policy_loss -25.241058349609375, 86394 seconds
+Episode 111/200 , episode_reward 85.88001865206014, value_loss 4.048059463500977, policy_loss -21.378602981567383, 86394 seconds
+Episode 121/200 , episode_reward 86.62210729310033, value_loss 1.681305170059204, policy_loss -13.189252853393555, 86393 seconds
+Episode 131/200 , episode_reward 86.13035599010182, value_loss 2.6957643032073975, policy_loss -19.900243759155273, 86394 seconds
+Episode 141/200 , episode_reward 86.89882670140129, value_loss 10.0319242477417, policy_loss -15.929300308227539, 86393 seconds
+Episode 151/200 , episode_reward 93.09274293958936, value_loss 1.2369024753570557, policy_loss -16.029308319091797, 86397 seconds
+Episode 161/200 , episode_reward 86.75297114333962, value_loss 0.9569926261901855, policy_loss -16.641639709472656, 86392 seconds
+Episode 171/200 , episode_reward 86.13774496471262, value_loss 1.2405630350112915, policy_loss -21.42395782470703, 86394 seconds
+Episode 181/200 , episode_reward 86.7964579337894, value_loss 0.5350368022918701, policy_loss -15.992945671081543, 86394 seconds
+Episode 191/200 , episode_reward 92.59172345410737, value_loss 0.7566039562225342, policy_loss -22.544410705566406, 86395 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_2.0 save succeed!
+=== END Train < update_step : 50, noise_discount : 2.0 > 18 minutes ===
+=== START Test < update_step : 50, noise_discount : 2.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 50, noise_discount : 2.0 > 0 minutes ===
+=== START Train < update_step : 50, noise_discount : 3.0 > ===
+Episode 1/200 , episode_reward 85.49995251655126, value_loss 0.9128457903862, policy_loss -20.19133758544922, 86393 seconds
+Episode 11/200 , episode_reward 86.36112046204848, value_loss 2.726652145385742, policy_loss -15.231047630310059, 86393 seconds
+Episode 21/200 , episode_reward 92.09634361676287, value_loss 0.8852729797363281, policy_loss -21.457374572753906, 86395 seconds
+Episode 31/200 , episode_reward 92.05386071890464, value_loss 2.0742294788360596, policy_loss -24.427936553955078, 86396 seconds
+Episode 41/200 , episode_reward 92.86578610414585, value_loss 0.8927546143531799, policy_loss -21.594058990478516, 86397 seconds
+Episode 51/200 , episode_reward 92.4854211247382, value_loss 0.5328661203384399, policy_loss -15.319785118103027, 86396 seconds
+Episode 61/200 , episode_reward 91.9544917512672, value_loss 0.49638235569000244, policy_loss -22.509441375732422, 86396 seconds
+Episode 71/200 , episode_reward 88.62849945264108, value_loss 1.2631731033325195, policy_loss -25.578765869140625, 86395 seconds
+Episode 81/200 , episode_reward 93.35253704475363, value_loss 1.0107989311218262, policy_loss -18.57601547241211, 86397 seconds
+Episode 91/200 , episode_reward 85.27386634165363, value_loss 0.8549041748046875, policy_loss -13.062957763671875, 86393 seconds
+Episode 101/200 , episode_reward 92.70773111204873, value_loss 0.6529568433761597, policy_loss -19.061874389648438, 86396 seconds
+Episode 111/200 , episode_reward 93.06025503743967, value_loss 0.6789087653160095, policy_loss -20.935277938842773, 86397 seconds
+Episode 121/200 , episode_reward 92.78018900165902, value_loss 0.7841584086418152, policy_loss -17.180139541625977, 86396 seconds
+Episode 131/200 , episode_reward 85.87159585980665, value_loss 1.1481947898864746, policy_loss -17.185073852539062, 86392 seconds
+Episode 141/200 , episode_reward 85.31001165284555, value_loss 0.6820915937423706, policy_loss -18.268836975097656, 86393 seconds
+Episode 151/200 , episode_reward 85.89453046335103, value_loss 0.5881688594818115, policy_loss -28.47237777709961, 86393 seconds
+Episode 161/200 , episode_reward 91.25837507139913, value_loss 0.8328301310539246, policy_loss -30.146760940551758, 86396 seconds
+Episode 171/200 , episode_reward 85.7308924347972, value_loss 0.5755736231803894, policy_loss -27.17665672302246, 86392 seconds
+Episode 181/200 , episode_reward 85.28665923754545, value_loss 2.622316360473633, policy_loss -26.376571655273438, 86393 seconds
+Episode 191/200 , episode_reward 91.59085543061899, value_loss 0.6608787178993225, policy_loss -22.67571449279785, 86396 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_50_noise_discount_3.0 save succeed!
+=== END Train < update_step : 50, noise_discount : 3.0 > 15 minutes ===
+=== START Test < update_step : 50, noise_discount : 3.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 50, noise_discount : 3.0 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 0.1 > ===
+Episode 1/200 , episode_reward -92.54869342009172, value_loss 0.7438557147979736, policy_loss -26.996692657470703, 86361 seconds
+Episode 11/200 , episode_reward -92.36594025323159, value_loss 0.7142511606216431, policy_loss -28.474668502807617, 86359 seconds
+Episode 21/200 , episode_reward -92.39918824703254, value_loss 0.7045865058898926, policy_loss -22.08656883239746, 86361 seconds
+Episode 31/200 , episode_reward -92.06795040705322, value_loss 1.055307388305664, policy_loss -20.10834503173828, 86362 seconds
+Episode 41/200 , episode_reward -92.48072547661172, value_loss 1.4549455642700195, policy_loss -11.29903507232666, 86358 seconds
+Episode 51/200 , episode_reward -92.25888595925173, value_loss 1.025188684463501, policy_loss -12.205828666687012, 86355 seconds
+Episode 61/200 , episode_reward -92.42952823641353, value_loss 1.0245423316955566, policy_loss -8.479665756225586, 86359 seconds
+Episode 71/200 , episode_reward -92.21245173444234, value_loss 1.3615254163742065, policy_loss -15.305447578430176, 86358 seconds
+Episode 81/200 , episode_reward -92.55968124727637, value_loss 1.9776599407196045, policy_loss -3.0792722702026367, 86354 seconds
+Episode 91/200 , episode_reward -92.43976738329351, value_loss 1.1999491453170776, policy_loss -0.03490406274795532, 86355 seconds
+Episode 101/200 , episode_reward -92.32251987107942, value_loss 1.0721848011016846, policy_loss 5.395961761474609, 86355 seconds
+Episode 111/200 , episode_reward -92.8621493777663, value_loss 1.9097028970718384, policy_loss -3.223834753036499, 86351 seconds
+Episode 121/200 , episode_reward -92.61118410646431, value_loss 1.2459572553634644, policy_loss 1.4559160470962524, 86356 seconds
+Episode 131/200 , episode_reward -92.1313916719968, value_loss 0.8833441734313965, policy_loss 3.042558431625366, 86349 seconds
+Episode 141/200 , episode_reward -92.81710183705336, value_loss 1.3678979873657227, policy_loss -0.5104139447212219, 86354 seconds
+Episode 151/200 , episode_reward -92.21846023175752, value_loss 0.9114760160446167, policy_loss -7.941832065582275, 86348 seconds
+Episode 161/200 , episode_reward -92.29778361357931, value_loss 1.0018993616104126, policy_loss -11.155324935913086, 86349 seconds
+Episode 171/200 , episode_reward -92.53232291276585, value_loss 0.987861156463623, policy_loss -6.250176429748535, 86347 seconds
+Episode 181/200 , episode_reward -92.34291509039542, value_loss 3.528284788131714, policy_loss -4.933102607727051, 86343 seconds
+Episode 191/200 , episode_reward -93.00430204918693, value_loss 1.946437120437622, policy_loss -4.201354503631592, 86347 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_0.1 save succeed!
+=== END Train < update_step : 100, noise_discount : 0.1 > 152 minutes ===
+=== START Test < update_step : 100, noise_discount : 0.1 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 0.1 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 0.5 > ===
+Episode 1/200 , episode_reward -70.850632036603, value_loss 1.8391327857971191, policy_loss -1.5372129678726196, 86347 seconds
+Episode 11/200 , episode_reward -72.05425703838988, value_loss 3.384841203689575, policy_loss -3.4476430416107178, 86340 seconds
+Episode 21/200 , episode_reward -72.62575998861209, value_loss 1.754011869430542, policy_loss -2.43896484375, 86341 seconds
+Episode 31/200 , episode_reward -72.49301106897173, value_loss 2.30607008934021, policy_loss -1.984336018562317, 86345 seconds
+Episode 41/200 , episode_reward -73.10852895146783, value_loss 1.0619488954544067, policy_loss 1.328508734703064, 86340 seconds
+Episode 51/200 , episode_reward -73.11964168379414, value_loss 1.435561180114746, policy_loss 2.1006290912628174, 86337 seconds
+Episode 61/200 , episode_reward -72.46830702376839, value_loss 3.311173439025879, policy_loss 3.6597342491149902, 86340 seconds
+Episode 71/200 , episode_reward -73.60233484554882, value_loss 2.1562182903289795, policy_loss 2.3249459266662598, 86341 seconds
+Episode 81/200 , episode_reward -72.44606935461032, value_loss 1.0822241306304932, policy_loss 2.056649684906006, 86359 seconds
+Episode 91/200 , episode_reward -72.30074670074497, value_loss 2.567028522491455, policy_loss -2.060265064239502, 86330 seconds
+Episode 101/200 , episode_reward -71.07930284848437, value_loss 0.7582708597183228, policy_loss 0.6820279359817505, 86339 seconds
+Episode 111/200 , episode_reward 29.338435843551267, value_loss 2.2309036254882812, policy_loss -5.148610591888428, 86336 seconds
+Episode 121/200 , episode_reward 29.269913824333287, value_loss 1.1905994415283203, policy_loss -0.38297486305236816, 86335 seconds
+Episode 131/200 , episode_reward -72.13395665263607, value_loss 1.622239112854004, policy_loss -4.305721282958984, 86338 seconds
+Episode 141/200 , episode_reward -73.2387552585212, value_loss 1.6595512628555298, policy_loss -1.5364305973052979, 86333 seconds
+Episode 151/200 , episode_reward -72.19608443284986, value_loss 1.8963351249694824, policy_loss 1.6341923475265503, 86332 seconds
+Episode 161/200 , episode_reward -74.03614350198474, value_loss 1.6969692707061768, policy_loss -3.5163424015045166, 86327 seconds
+Episode 171/200 , episode_reward -72.58770098900317, value_loss 1.8294609785079956, policy_loss -1.685175895690918, 86328 seconds
+Episode 181/200 , episode_reward -73.09785450503232, value_loss 1.5040528774261475, policy_loss -4.243155479431152, 86327 seconds
+Episode 191/200 , episode_reward -70.88185838052885, value_loss 1.9501194953918457, policy_loss 3.017914295196533, 86322 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_0.5 save succeed!
+=== END Train < update_step : 100, noise_discount : 0.5 > 203 minutes ===
+=== START Test < update_step : 100, noise_discount : 0.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 0.5 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 1.0 > ===
+Episode 1/200 , episode_reward 65.27183941657258, value_loss 4.880224227905273, policy_loss -0.015398681163787842, 86361 seconds
+Episode 11/200 , episode_reward 64.33826815835644, value_loss 4.110528945922852, policy_loss -1.2266557216644287, 86357 seconds
+Episode 21/200 , episode_reward 37.72583788701352, value_loss 5.249405384063721, policy_loss -2.524873733520508, 86330 seconds
+Episode 31/200 , episode_reward 37.827478435078596, value_loss 2.0451292991638184, policy_loss -2.6203718185424805, 86335 seconds
+Episode 41/200 , episode_reward -66.93320768949779, value_loss 10.036555290222168, policy_loss -2.2108428478240967, 86328 seconds
+Episode 51/200 , episode_reward 78.50071331106439, value_loss 2.411184787750244, policy_loss 0.42179346084594727, 86377 seconds
+Episode 61/200 , episode_reward -69.98485321045793, value_loss 2.8539130687713623, policy_loss -2.0515730381011963, 86317 seconds
+Episode 71/200 , episode_reward 38.17394862447359, value_loss 1.2022370100021362, policy_loss -0.19743043184280396, 86327 seconds
+Episode 81/200 , episode_reward 67.86197626935629, value_loss 1.1966732740402222, policy_loss 1.3285963535308838, 86356 seconds
+Episode 91/200 , episode_reward 78.35523409118952, value_loss 1.0421481132507324, policy_loss 2.4540278911590576, 86371 seconds
+Episode 101/200 , episode_reward -67.72058073121197, value_loss 2.2268412113189697, policy_loss -0.6013774871826172, 86324 seconds
+Episode 111/200 , episode_reward 64.06298140413422, value_loss 1.5782318115234375, policy_loss 1.7292265892028809, 86359 seconds
+Episode 121/200 , episode_reward -68.51273295932799, value_loss 1.762519121170044, policy_loss 0.921208381652832, 86317 seconds
+Episode 131/200 , episode_reward 38.00450484064395, value_loss 1.744455099105835, policy_loss -2.028738021850586, 86325 seconds
+Episode 141/200 , episode_reward -66.65163858336088, value_loss 2.368385076522827, policy_loss -0.11832475662231445, 86317 seconds
+Episode 151/200 , episode_reward 62.65114402136357, value_loss 0.9725630283355713, policy_loss 1.4927356243133545, 86353 seconds
+Episode 161/200 , episode_reward 65.10187728404628, value_loss 1.4296311140060425, policy_loss 1.0850648880004883, 86353 seconds
+Episode 171/200 , episode_reward 77.40705781530013, value_loss 1.3519065380096436, policy_loss -4.214298248291016, 86371 seconds
+Episode 181/200 , episode_reward -67.51258261204124, value_loss 1.36018967628479, policy_loss -0.7885973453521729, 86327 seconds
+Episode 191/200 , episode_reward -67.64980012675755, value_loss 1.1257286071777344, policy_loss 3.053813934326172, 86315 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_1.0 save succeed!
+=== END Train < update_step : 100, noise_discount : 1.0 > 201 minutes ===
+=== START Test < update_step : 100, noise_discount : 1.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 1.0 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 1.5 > ===
+Episode 1/200 , episode_reward -72.01655643298884, value_loss 3.535413980484009, policy_loss -2.1741139888763428, 86318 seconds
+Episode 11/200 , episode_reward 76.24120425180706, value_loss 1.6883797645568848, policy_loss -0.13979005813598633, 86371 seconds
+Episode 21/200 , episode_reward 46.16188831872105, value_loss 2.6517574787139893, policy_loss 1.2198392152786255, 86339 seconds
+Episode 31/200 , episode_reward 63.25252323216806, value_loss 1.2777767181396484, policy_loss 2.884223461151123, 86353 seconds
+Episode 41/200 , episode_reward 57.91081679022211, value_loss 2.207608461380005, policy_loss -0.9786845445632935, 86350 seconds
+Episode 51/200 , episode_reward 89.72921464789192, value_loss 0.8496196866035461, policy_loss -1.1970231533050537, 86386 seconds
+Episode 61/200 , episode_reward 47.37345438605652, value_loss 3.5683765411376953, policy_loss 0.6290957927703857, 86338 seconds
+Episode 71/200 , episode_reward 49.7903006380211, value_loss 1.7190606594085693, policy_loss -2.862455368041992, 86336 seconds
+Episode 81/200 , episode_reward 89.77909347236587, value_loss 2.989643096923828, policy_loss 0.35080480575561523, 86386 seconds
+Episode 91/200 , episode_reward 61.770816745021406, value_loss 3.842116355895996, policy_loss -2.3320388793945312, 86351 seconds
+Episode 101/200 , episode_reward 89.81675538223004, value_loss 1.533308982849121, policy_loss 0.6127282381057739, 86386 seconds
+Episode 111/200 , episode_reward 71.18344330970936, value_loss 1.6592613458633423, policy_loss -1.019544243812561, 86367 seconds
+Episode 121/200 , episode_reward 88.1695393276383, value_loss 0.7714107036590576, policy_loss 0.6155857443809509, 86383 seconds
+Episode 131/200 , episode_reward 71.92797679139524, value_loss 3.7022972106933594, policy_loss 0.3802432119846344, 86368 seconds
+Episode 141/200 , episode_reward 58.51307455182498, value_loss 3.0216002464294434, policy_loss 2.356628894805908, 86354 seconds
+Episode 151/200 , episode_reward 62.63278311920006, value_loss 3.5094616413116455, policy_loss 3.4390361309051514, 86360 seconds
+Episode 161/200 , episode_reward 60.10111806536011, value_loss 2.8815391063690186, policy_loss 0.9089604616165161, 86359 seconds
+Episode 171/200 , episode_reward 44.886239471212065, value_loss 1.498799204826355, policy_loss 0.529651403427124, 86338 seconds
+Episode 181/200 , episode_reward 88.68095755395923, value_loss 2.310065269470215, policy_loss -1.3324521780014038, 86386 seconds
+Episode 191/200 , episode_reward 47.263322546958406, value_loss 1.1497386693954468, policy_loss 0.06802940368652344, 86344 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_1.5 save succeed!
+=== END Train < update_step : 100, noise_discount : 1.5 > 145 minutes ===
+=== START Test < update_step : 100, noise_discount : 1.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 1.5 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 2.0 > ===
+Episode 1/200 , episode_reward -76.06725458769505, value_loss 2.3404760360717773, policy_loss 0.0218966007232666, 86319 seconds
+Episode 11/200 , episode_reward 74.88719416059288, value_loss 3.534674644470215, policy_loss 1.6685336828231812, 86377 seconds
+Episode 21/200 , episode_reward 58.98390074682463, value_loss 0.9684550762176514, policy_loss 0.7633988857269287, 86356 seconds
+Episode 31/200 , episode_reward 88.53243441978736, value_loss 1.2342159748077393, policy_loss -0.4052337110042572, 86387 seconds
+Episode 41/200 , episode_reward 58.287827674333656, value_loss 1.7751379013061523, policy_loss -0.23562783002853394, 86356 seconds
+Episode 51/200 , episode_reward 90.13454862378745, value_loss 1.790780782699585, policy_loss -2.883044481277466, 86389 seconds
+Episode 61/200 , episode_reward 90.04852601296788, value_loss 1.2723474502563477, policy_loss -0.38222619891166687, 86387 seconds
+Episode 71/200 , episode_reward 44.89402707761503, value_loss 1.1491576433181763, policy_loss -0.6762219071388245, 86336 seconds
+Episode 81/200 , episode_reward 44.869368246565074, value_loss 1.6579662561416626, policy_loss -2.6855862140655518, 86340 seconds
+Episode 91/200 , episode_reward 59.81181246663085, value_loss 2.109528064727783, policy_loss -3.040228843688965, 86354 seconds
+Episode 101/200 , episode_reward 56.856061036921396, value_loss 1.5132265090942383, policy_loss -2.948800563812256, 86356 seconds
+Episode 111/200 , episode_reward 57.83828677444906, value_loss 5.860340118408203, policy_loss 0.00012314319610595703, 86354 seconds
+Episode 121/200 , episode_reward 75.71792754425286, value_loss 1.4328978061676025, policy_loss -2.303107261657715, 86374 seconds
+Episode 131/200 , episode_reward 89.39535270195464, value_loss 2.019820213317871, policy_loss -4.071165084838867, 86386 seconds
+Episode 141/200 , episode_reward 57.23325960910591, value_loss 1.7431113719940186, policy_loss -4.115178108215332, 86359 seconds
+Episode 151/200 , episode_reward 74.54895752709533, value_loss 0.8043363094329834, policy_loss -6.366625785827637, 86376 seconds
+Episode 161/200 , episode_reward 59.05320721208392, value_loss 1.1575449705123901, policy_loss -5.20443868637085, 86358 seconds
+Episode 171/200 , episode_reward 88.74252666696107, value_loss 1.1046218872070312, policy_loss -5.2337775230407715, 86390 seconds
+Episode 181/200 , episode_reward 57.67892628206215, value_loss 2.1204264163970947, policy_loss -11.6357421875, 86357 seconds
+Episode 191/200 , episode_reward 43.043198246697585, value_loss 0.7012436389923096, policy_loss -8.949904441833496, 86337 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_2.0 save succeed!
+=== END Train < update_step : 100, noise_discount : 2.0 > 99 minutes ===
+=== START Test < update_step : 100, noise_discount : 2.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 2.0 > 0 minutes ===
+=== START Train < update_step : 100, noise_discount : 3.0 > ===
+Episode 1/200 , episode_reward 88.00249638047259, value_loss 1.5511105060577393, policy_loss -2.9414286613464355, 86386 seconds
+Episode 11/200 , episode_reward 88.75534134675347, value_loss 2.1131539344787598, policy_loss -4.890049934387207, 86387 seconds
+Episode 21/200 , episode_reward 87.98684908687981, value_loss 1.1607285737991333, policy_loss -2.893589973449707, 86386 seconds
+Episode 31/200 , episode_reward 88.07925514570859, value_loss 0.9783079624176025, policy_loss -3.366763114929199, 86391 seconds
+Episode 41/200 , episode_reward 87.76398335320673, value_loss 2.2381205558776855, policy_loss -8.285736083984375, 86392 seconds
+Episode 51/200 , episode_reward 86.29337869695189, value_loss 0.7878690958023071, policy_loss -6.323603630065918, 86386 seconds
+Episode 61/200 , episode_reward 72.42851992898912, value_loss 1.1303459405899048, policy_loss -2.209243059158325, 86373 seconds
+Episode 71/200 , episode_reward 69.8261025487857, value_loss 1.3861842155456543, policy_loss -6.360375881195068, 86377 seconds
+Episode 81/200 , episode_reward 54.001775075833905, value_loss 0.9254070520401001, policy_loss -1.6359623670578003, 86368 seconds
+Episode 91/200 , episode_reward 88.75751532751487, value_loss 2.793454885482788, policy_loss -7.225974082946777, 86392 seconds
+Episode 101/200 , episode_reward 86.75031549558706, value_loss 1.6292555332183838, policy_loss -5.208346366882324, 86386 seconds
+Episode 111/200 , episode_reward 86.56433055923368, value_loss 1.0161218643188477, policy_loss -2.1708526611328125, 86386 seconds
+Episode 121/200 , episode_reward 88.57095926788182, value_loss 1.3222500085830688, policy_loss -1.4687371253967285, 86387 seconds
+Episode 131/200 , episode_reward 88.8092820122569, value_loss 2.806319236755371, policy_loss -6.037601947784424, 86389 seconds
+Episode 141/200 , episode_reward 86.66858147436172, value_loss 1.8509933948516846, policy_loss -2.4094760417938232, 86386 seconds
+Episode 151/200 , episode_reward 89.04560356144668, value_loss 1.2977315187454224, policy_loss -4.106986999511719, 86386 seconds
+Episode 161/200 , episode_reward 86.34824937769477, value_loss 1.917721152305603, policy_loss -4.596069812774658, 86385 seconds
+Episode 171/200 , episode_reward 53.959851256159816, value_loss 0.5947904586791992, policy_loss -4.363325119018555, 86357 seconds
+Episode 181/200 , episode_reward 87.81996951214609, value_loss 1.435917615890503, policy_loss -1.130165696144104, 86388 seconds
+Episode 191/200 , episode_reward 88.26839664393736, value_loss 1.9077664613723755, policy_loss -2.437100887298584, 86387 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_100_noise_discount_3.0 save succeed!
+=== END Train < update_step : 100, noise_discount : 3.0 > 56 minutes ===
+=== START Test < update_step : 100, noise_discount : 3.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 100, noise_discount : 3.0 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 0.1 > ===
+Episode 1/200 , episode_reward -91.78785493267802, value_loss 2.130025863647461, policy_loss -2.803373098373413, 86312 seconds
+Episode 11/200 , episode_reward -91.44631620554017, value_loss 2.8870203495025635, policy_loss -2.906064748764038, 86322 seconds
+Episode 21/200 , episode_reward -92.84364528996669, value_loss 0.9304055571556091, policy_loss -3.6486456394195557, 86318 seconds
+Episode 31/200 , episode_reward -93.08442495927714, value_loss 0.9372936487197876, policy_loss 1.7622954845428467, 86314 seconds
+Episode 41/200 , episode_reward -92.98381964183034, value_loss 5.562512397766113, policy_loss -1.5636305809020996, 86319 seconds
+Episode 51/200 , episode_reward -93.15023868849231, value_loss 1.3308534622192383, policy_loss -4.461231231689453, 86314 seconds
+Episode 61/200 , episode_reward -93.13539260753608, value_loss 1.2613630294799805, policy_loss -1.270534873008728, 86312 seconds
+Episode 71/200 , episode_reward -93.20443831641934, value_loss 1.8206367492675781, policy_loss 0.8188107013702393, 86312 seconds
+Episode 81/200 , episode_reward -93.27116317032988, value_loss 2.5929386615753174, policy_loss -1.2376160621643066, 86318 seconds
+Episode 91/200 , episode_reward -93.32705541790088, value_loss 1.5852854251861572, policy_loss 1.3506630659103394, 86318 seconds
+Episode 101/200 , episode_reward -93.09255523502965, value_loss 2.2514829635620117, policy_loss -1.819912314414978, 86309 seconds
+Episode 111/200 , episode_reward -93.36368364749713, value_loss 0.6250649690628052, policy_loss -2.9371724128723145, 86309 seconds
+Episode 121/200 , episode_reward -92.91140275414506, value_loss 1.6743085384368896, policy_loss -1.1708027124404907, 86312 seconds
+Episode 131/200 , episode_reward -93.63473270273937, value_loss 1.2407563924789429, policy_loss -0.8370831608772278, 86315 seconds
+Episode 141/200 , episode_reward -92.88857318336662, value_loss 0.49697428941726685, policy_loss 1.0798856019973755, 86322 seconds
+Episode 151/200 , episode_reward -92.98129939635872, value_loss 0.6422645449638367, policy_loss -1.8104362487792969, 86325 seconds
+Episode 161/200 , episode_reward -93.44616074338505, value_loss 2.265223741531372, policy_loss 0.8964076042175293, 86322 seconds
+Episode 171/200 , episode_reward -93.10424475522144, value_loss 0.556916356086731, policy_loss 3.2404398918151855, 86315 seconds
+Episode 181/200 , episode_reward -93.45387119197841, value_loss 1.8774858713150024, policy_loss -0.1230267584323883, 86316 seconds
+Episode 191/200 , episode_reward 7.415312060832946, value_loss 0.8928986191749573, policy_loss 0.941721498966217, 86309 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_0.1 save succeed!
+=== END Train < update_step : 150, noise_discount : 0.1 > 276 minutes ===
+=== START Test < update_step : 150, noise_discount : 0.1 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 0.1 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 0.5 > ===
+Episode 1/200 , episode_reward 62.2303882281251, value_loss 1.1991442441940308, policy_loss -1.1232259273529053, 86354 seconds
+Episode 11/200 , episode_reward 28.64103615890133, value_loss 0.9614102840423584, policy_loss 2.138018846511841, 86314 seconds
+Episode 21/200 , episode_reward -69.17505968394235, value_loss 0.31459105014801025, policy_loss 4.450947284698486, 86315 seconds
+Episode 31/200 , episode_reward -69.68275698678683, value_loss 0.8191242814064026, policy_loss 5.546406269073486, 86310 seconds
+Episode 41/200 , episode_reward -68.10577445262255, value_loss 0.24992212653160095, policy_loss 4.639525890350342, 86315 seconds
+Episode 51/200 , episode_reward 68.23290330548878, value_loss 1.868201732635498, policy_loss 3.7780890464782715, 86358 seconds
+Episode 61/200 , episode_reward -75.6201990324373, value_loss 0.4529365003108978, policy_loss 6.001000881195068, 86325 seconds
+Episode 71/200 , episode_reward 30.64556377089862, value_loss 0.42835262417793274, policy_loss 2.4886398315429688, 86333 seconds
+Episode 81/200 , episode_reward -74.76906931071537, value_loss 0.19511249661445618, policy_loss 4.6278395652771, 86313 seconds
+Episode 91/200 , episode_reward -75.90537492370896, value_loss 1.9036461114883423, policy_loss 0.5613986849784851, 86322 seconds
+Episode 101/200 , episode_reward -75.69099673572444, value_loss 3.135977029800415, policy_loss 6.286932945251465, 86313 seconds
+Episode 111/200 , episode_reward -75.29941134250514, value_loss 1.8219518661499023, policy_loss 5.7969536781311035, 86322 seconds
+Episode 121/200 , episode_reward -70.10933567875769, value_loss 1.7077889442443848, policy_loss 4.258673191070557, 86317 seconds
+Episode 131/200 , episode_reward -68.88284793491896, value_loss 1.881507396697998, policy_loss 4.588035583496094, 86314 seconds
+Episode 141/200 , episode_reward -69.62973996974131, value_loss 3.2357423305511475, policy_loss 5.034361839294434, 86316 seconds
+Episode 151/200 , episode_reward -70.21995608562143, value_loss 1.8548917770385742, policy_loss 3.679600715637207, 86318 seconds
+Episode 161/200 , episode_reward 44.52174909553739, value_loss 1.801192283630371, policy_loss 3.100485324859619, 86336 seconds
+Episode 171/200 , episode_reward 74.32953737983769, value_loss 1.133225440979004, policy_loss 2.5537900924682617, 86372 seconds
+Episode 181/200 , episode_reward -69.62223122425726, value_loss 1.2154796123504639, policy_loss 2.8880209922790527, 86324 seconds
+Episode 191/200 , episode_reward -75.92428380099727, value_loss 0.8694052696228027, policy_loss 2.8576741218566895, 86320 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_0.5 save succeed!
+=== END Train < update_step : 150, noise_discount : 0.5 > 251 minutes ===
+=== START Test < update_step : 150, noise_discount : 0.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 0.5 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 1.0 > ===
+Episode 1/200 , episode_reward -65.95639042261848, value_loss 1.7375963926315308, policy_loss 1.266746163368225, 86348 seconds
+Episode 11/200 , episode_reward -64.08316015889177, value_loss 2.401759147644043, policy_loss -1.5512220859527588, 86341 seconds
+Episode 21/200 , episode_reward -64.87241800564446, value_loss 8.629627227783203, policy_loss 1.6497808694839478, 86319 seconds
+Episode 31/200 , episode_reward -69.70145684029941, value_loss 1.6860570907592773, policy_loss -1.5922152996063232, 86319 seconds
+Episode 41/200 , episode_reward 56.6029962205942, value_loss 10.468770027160645, policy_loss 0.06790909171104431, 86350 seconds
+Episode 51/200 , episode_reward -70.35292081665358, value_loss 0.9211816787719727, policy_loss 0.9596781730651855, 86321 seconds
+Episode 61/200 , episode_reward 90.49081247034923, value_loss 1.8707622289657593, policy_loss -2.453950881958008, 86382 seconds
+Episode 71/200 , episode_reward 71.52861661952639, value_loss 2.5773744583129883, policy_loss -5.4558210372924805, 86352 seconds
+Episode 81/200 , episode_reward -65.50065376624885, value_loss 3.0198822021484375, policy_loss -5.3174567222595215, 86302 seconds
+Episode 91/200 , episode_reward -72.25839805488008, value_loss 0.8514338731765747, policy_loss -7.217865943908691, 86306 seconds
+Episode 101/200 , episode_reward -65.69047856063962, value_loss 0.3842625617980957, policy_loss -0.8242822289466858, 86313 seconds
+Episode 111/200 , episode_reward -65.50792456248746, value_loss 0.8947657346725464, policy_loss 1.5819098949432373, 86310 seconds
+Episode 121/200 , episode_reward 36.481280219334046, value_loss 39.27076721191406, policy_loss -0.0001621246337890625, 86312 seconds
+Episode 131/200 , episode_reward 48.96808530657187, value_loss 1.600773811340332, policy_loss -0.9965205192565918, 86334 seconds
+Episode 141/200 , episode_reward -65.33323209758257, value_loss 4.732997894287109, policy_loss -0.07906585931777954, 86305 seconds
+Episode 151/200 , episode_reward 71.58845915005483, value_loss 0.6025812029838562, policy_loss -0.9191856384277344, 86357 seconds
+Episode 161/200 , episode_reward -64.48362097564787, value_loss 9.027344703674316, policy_loss 2.2716052532196045, 86316 seconds
+Episode 171/200 , episode_reward -64.0228095880364, value_loss 0.9448635578155518, policy_loss 0.11235165596008301, 86318 seconds
+Episode 181/200 , episode_reward -65.01665287212603, value_loss 2.7669882774353027, policy_loss 0.5192776322364807, 86317 seconds
+Episode 191/200 , episode_reward -71.16191015095643, value_loss 1.276477336883545, policy_loss 0.18687963485717773, 86304 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_1.0 save succeed!
+=== END Train < update_step : 150, noise_discount : 1.0 > 220 minutes ===
+=== START Test < update_step : 150, noise_discount : 1.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 1.0 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 1.5 > ===
+Episode 1/200 , episode_reward 68.67948060684179, value_loss 5.516036033630371, policy_loss -0.23138022422790527, 86359 seconds
+Episode 11/200 , episode_reward 69.04550100327172, value_loss 1.591705560684204, policy_loss 1.5700138807296753, 86356 seconds
+Episode 21/200 , episode_reward 87.76268162736, value_loss 0.6187189817428589, policy_loss 3.301546812057495, 86383 seconds
+Episode 31/200 , episode_reward 69.1964588247182, value_loss 0.6280997395515442, policy_loss 1.3337502479553223, 86353 seconds
+Episode 41/200 , episode_reward -69.43915030606043, value_loss 1.4348044395446777, policy_loss 1.0501030683517456, 86309 seconds
+Episode 51/200 , episode_reward 45.16447930666363, value_loss 1.2039051055908203, policy_loss 1.1327935457229614, 86328 seconds
+Episode 61/200 , episode_reward -69.94263572261718, value_loss 1.2785807847976685, policy_loss 0.8167135715484619, 86307 seconds
+Episode 71/200 , episode_reward 87.23926741400558, value_loss 0.45504480600357056, policy_loss 4.202817916870117, 86382 seconds
+Episode 81/200 , episode_reward 70.94589708391209, value_loss 1.275094985961914, policy_loss 0.10558728873729706, 86358 seconds
+Episode 91/200 , episode_reward -68.78969820191794, value_loss 1.6309006214141846, policy_loss 1.0592947006225586, 86317 seconds
+Episode 101/200 , episode_reward 74.34739116259594, value_loss 0.9070529937744141, policy_loss 1.2975431680679321, 86363 seconds
+Episode 111/200 , episode_reward 52.341635182878754, value_loss 0.7761735916137695, policy_loss 1.4581549167633057, 86340 seconds
+Episode 121/200 , episode_reward 86.02259184866719, value_loss 2.3699281215667725, policy_loss 0.5229500532150269, 86381 seconds
+Episode 131/200 , episode_reward -70.29244916606204, value_loss 1.3684159517288208, policy_loss 2.1840858459472656, 86318 seconds
+Episode 141/200 , episode_reward 47.27015853051521, value_loss 4.240924835205078, policy_loss 0.5867297053337097, 86333 seconds
+Episode 151/200 , episode_reward 88.5554672503286, value_loss 1.9721627235412598, policy_loss 1.906463384628296, 86380 seconds
+Episode 161/200 , episode_reward -74.59776045992604, value_loss 1.861214280128479, policy_loss -0.43422865867614746, 86308 seconds
+Episode 171/200 , episode_reward 87.8236723219778, value_loss 1.3608393669128418, policy_loss 1.3147578239440918, 86382 seconds
+Episode 181/200 , episode_reward 53.95563987264045, value_loss 1.4766062498092651, policy_loss -0.766521692276001, 86347 seconds
+Episode 191/200 , episode_reward 47.68512003780779, value_loss 2.760537624359131, policy_loss 2.028407096862793, 86329 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_1.5 save succeed!
+=== END Train < update_step : 150, noise_discount : 1.5 > 193 minutes ===
+=== START Test < update_step : 150, noise_discount : 1.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 1.5 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 2.0 > ===
+Episode 1/200 , episode_reward -73.62468286981057, value_loss 0.6183210611343384, policy_loss 2.4652247428894043, 86310 seconds
+Episode 11/200 , episode_reward -79.76267427851413, value_loss 0.6283559203147888, policy_loss 0.7565282583236694, 86318 seconds
+Episode 21/200 , episode_reward 51.99958647696955, value_loss 8.579358100891113, policy_loss -0.4276825785636902, 86347 seconds
+Episode 31/200 , episode_reward 66.98088553935568, value_loss 0.6217227578163147, policy_loss 2.3648324012756348, 86355 seconds
+Episode 41/200 , episode_reward 42.34990710924109, value_loss 0.8180526494979858, policy_loss 0.3792101740837097, 86334 seconds
+Episode 51/200 , episode_reward 50.03553530364158, value_loss 3.0609207153320312, policy_loss 0.3028559982776642, 86352 seconds
+Episode 61/200 , episode_reward 42.5864660625816, value_loss 1.8198318481445312, policy_loss -2.3125264644622803, 86328 seconds
+Episode 71/200 , episode_reward 43.08950690703179, value_loss 12.133962631225586, policy_loss -0.4715566039085388, 86335 seconds
+Episode 81/200 , episode_reward 43.49354446162677, value_loss 2.469970226287842, policy_loss 0.04179179668426514, 86308 seconds
+Episode 91/200 , episode_reward -75.01154002121771, value_loss 1.0429456233978271, policy_loss -1.0156941413879395, 86313 seconds
+Episode 101/200 , episode_reward -74.21682146015678, value_loss 0.5153327584266663, policy_loss 0.2950558662414551, 86318 seconds
+Episode 111/200 , episode_reward 50.979686209254645, value_loss 5.478996753692627, policy_loss 1.1247509717941284, 86345 seconds
+Episode 121/200 , episode_reward 50.35606436852155, value_loss 2.9189748764038086, policy_loss -0.2648535370826721, 86348 seconds
+Episode 131/200 , episode_reward -72.50681508280387, value_loss 0.7042959332466125, policy_loss 2.142061233520508, 86326 seconds
+Episode 141/200 , episode_reward 75.31350317003506, value_loss 0.9039053916931152, policy_loss 2.557873249053955, 86362 seconds
+Episode 151/200 , episode_reward 66.14906665825325, value_loss 4.2852678298950195, policy_loss -0.9781079888343811, 86359 seconds
+Episode 161/200 , episode_reward 73.49304593984914, value_loss 1.836696982383728, policy_loss 0.6107629537582397, 86374 seconds
+Episode 171/200 , episode_reward 67.31654095971673, value_loss 2.9787495136260986, policy_loss -0.4740157723426819, 86360 seconds
+Episode 181/200 , episode_reward -75.02315995455622, value_loss 4.422821521759033, policy_loss -1.403910517692566, 86317 seconds
+Episode 191/200 , episode_reward 74.56397598283503, value_loss 1.5090267658233643, policy_loss -1.246220350265503, 86373 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_2.0 save succeed!
+=== END Train < update_step : 150, noise_discount : 2.0 > 186 minutes ===
+=== START Test < update_step : 150, noise_discount : 2.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 2.0 > 0 minutes ===
+=== START Train < update_step : 150, noise_discount : 3.0 > ===
+Episode 1/200 , episode_reward 36.776729638533936, value_loss 1.8827738761901855, policy_loss 0.8150086402893066, 86322 seconds
+Episode 11/200 , episode_reward -81.19892335272127, value_loss 2.091200351715088, policy_loss -1.0634939670562744, 86317 seconds
+Episode 21/200 , episode_reward 62.33066498527541, value_loss 2.0730648040771484, policy_loss 0.36046987771987915, 86361 seconds
+Episode 31/200 , episode_reward -82.17227095128524, value_loss 1.631508469581604, policy_loss -0.035975098609924316, 86317 seconds
+Episode 41/200 , episode_reward 83.85442304978868, value_loss 1.473841905593872, policy_loss 1.289943814277649, 86381 seconds
+Episode 51/200 , episode_reward -81.98386691363456, value_loss 5.263392448425293, policy_loss -0.23819464445114136, 86311 seconds
+Episode 61/200 , episode_reward 62.620544613578595, value_loss 1.7269333600997925, policy_loss 1.4087822437286377, 86361 seconds
+Episode 71/200 , episode_reward 60.21550301268614, value_loss 3.965301036834717, policy_loss -3.5511205196380615, 86341 seconds
+Episode 81/200 , episode_reward 63.24666914555044, value_loss 1.3913991451263428, policy_loss -0.6056535840034485, 86340 seconds
+Episode 91/200 , episode_reward 59.49541473580035, value_loss 6.261312961578369, policy_loss -1.4337952136993408, 86351 seconds
+Episode 101/200 , episode_reward -81.64223947834058, value_loss 1.9033660888671875, policy_loss -4.233133316040039, 86305 seconds
+Episode 111/200 , episode_reward 34.3541258035242, value_loss 5.6779584884643555, policy_loss -0.7830561399459839, 86327 seconds
+Episode 121/200 , episode_reward -80.42287585298511, value_loss 35.17158508300781, policy_loss -3.5602848529815674, 86314 seconds
+Episode 131/200 , episode_reward 84.60908822612718, value_loss 3.307236671447754, policy_loss -0.06756258010864258, 86383 seconds
+Episode 141/200 , episode_reward -80.50465032421073, value_loss 3.0155818462371826, policy_loss 0.34253203868865967, 86316 seconds
+Episode 151/200 , episode_reward 71.64134724878748, value_loss 1.3179525136947632, policy_loss -1.6455539464950562, 86371 seconds
+Episode 161/200 , episode_reward 73.31075969678594, value_loss 1.1760042905807495, policy_loss -1.0956709384918213, 86372 seconds
+Episode 171/200 , episode_reward 61.05078357531408, value_loss 3.8064022064208984, policy_loss 1.9674416780471802, 86357 seconds
+Episode 181/200 , episode_reward 44.812726190410174, value_loss 3.068739175796509, policy_loss -1.825169563293457, 86342 seconds
+Episode 191/200 , episode_reward -82.75293119280578, value_loss 1.609710931777954, policy_loss 0.7558555603027344, 86323 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_150_noise_discount_3.0 save succeed!
+=== END Train < update_step : 150, noise_discount : 3.0 > 188 minutes ===
+=== START Test < update_step : 150, noise_discount : 3.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 150, noise_discount : 3.0 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 0.1 > ===
+Episode 1/200 , episode_reward -90.76472546447245, value_loss 2.8932759761810303, policy_loss -0.28899529576301575, 86311 seconds
+Episode 11/200 , episode_reward -90.984842884572, value_loss 2.914820909500122, policy_loss -4.798733711242676, 86319 seconds
+Episode 21/200 , episode_reward -90.87391434940763, value_loss 1.482561707496643, policy_loss 1.9200502634048462, 86312 seconds
+Episode 31/200 , episode_reward -90.99980405840755, value_loss 2.4301648139953613, policy_loss -0.8125782012939453, 86314 seconds
+Episode 41/200 , episode_reward -90.7316602931341, value_loss 1.7979280948638916, policy_loss 0.22427868843078613, 86313 seconds
+Episode 51/200 , episode_reward -90.97505379655473, value_loss 1.844745397567749, policy_loss -0.7636196613311768, 86318 seconds
+Episode 61/200 , episode_reward -90.96541958588544, value_loss 2.780367374420166, policy_loss 1.2330758571624756, 86319 seconds
+Episode 71/200 , episode_reward -90.9990910888612, value_loss 1.1291437149047852, policy_loss 2.2148890495300293, 86321 seconds
+Episode 81/200 , episode_reward -91.27669233879848, value_loss 2.483995199203491, policy_loss 2.2682712078094482, 86317 seconds
+Episode 91/200 , episode_reward -90.88015140573147, value_loss 0.6139410138130188, policy_loss 2.2550017833709717, 86319 seconds
+Episode 101/200 , episode_reward -91.00662346018296, value_loss 0.45408546924591064, policy_loss 1.945145845413208, 86322 seconds
+Episode 111/200 , episode_reward -91.32580858124848, value_loss 2.055643320083618, policy_loss 1.8619954586029053, 86324 seconds
+Episode 121/200 , episode_reward -91.15679319506239, value_loss 1.4997386932373047, policy_loss 1.974107265472412, 86322 seconds
+Episode 131/200 , episode_reward -90.72505661407841, value_loss 0.5906053185462952, policy_loss 3.550255298614502, 86311 seconds
+Episode 141/200 , episode_reward -91.20234139754557, value_loss 1.842385172843933, policy_loss 2.883007049560547, 86322 seconds
+Episode 151/200 , episode_reward -91.32036209256295, value_loss 2.9045724868774414, policy_loss -0.47339579463005066, 86310 seconds
+Episode 161/200 , episode_reward -90.58520224341414, value_loss 2.591067314147949, policy_loss 2.8999478816986084, 86325 seconds
+Episode 171/200 , episode_reward -90.95813227017346, value_loss 1.5553940534591675, policy_loss 2.0564968585968018, 86318 seconds
+Episode 181/200 , episode_reward -90.9420930284662, value_loss 1.5189201831817627, policy_loss -1.6153759956359863, 86311 seconds
+Episode 191/200 , episode_reward -90.50613062810022, value_loss 0.8827106952667236, policy_loss 2.7835474014282227, 86318 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_0.1 save succeed!
+=== END Train < update_step : 200, noise_discount : 0.1 > 277 minutes ===
+=== START Test < update_step : 200, noise_discount : 0.1 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 0.1 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 0.5 > ===
+Episode 1/200 , episode_reward -67.23251692914884, value_loss 2.673631191253662, policy_loss -1.1039073467254639, 86318 seconds
+Episode 11/200 , episode_reward -66.71440485592888, value_loss 2.3394546508789062, policy_loss 1.659115195274353, 86313 seconds
+Episode 21/200 , episode_reward -66.84545185572543, value_loss 0.2976880967617035, policy_loss 3.6623713970184326, 86319 seconds
+Episode 31/200 , episode_reward -67.88774861622113, value_loss 1.3786628246307373, policy_loss 1.80735445022583, 86320 seconds
+Episode 41/200 , episode_reward -67.75588783044994, value_loss 0.8454862236976624, policy_loss 3.2389657497406006, 86334 seconds
+Episode 51/200 , episode_reward 54.7206259074597, value_loss 1.434373140335083, policy_loss -0.08249211311340332, 86354 seconds
+Episode 61/200 , episode_reward -66.81637942014864, value_loss 1.3405499458312988, policy_loss 2.2198894023895264, 86318 seconds
+Episode 71/200 , episode_reward -77.50424463554509, value_loss 1.0781993865966797, policy_loss 1.5678298473358154, 86314 seconds
+Episode 81/200 , episode_reward -77.51404673229717, value_loss 4.550657749176025, policy_loss -0.4921601414680481, 86318 seconds
+Episode 91/200 , episode_reward -78.41385714390975, value_loss 0.741581916809082, policy_loss 2.0638818740844727, 86314 seconds
+Episode 101/200 , episode_reward -78.81929908293105, value_loss 1.2154104709625244, policy_loss 1.2625620365142822, 86319 seconds
+Episode 111/200 , episode_reward 36.30949474353931, value_loss 2.995584487915039, policy_loss -2.866274118423462, 86328 seconds
+Episode 121/200 , episode_reward 45.61051301713465, value_loss 2.1107840538024902, policy_loss 0.008385330438613892, 86339 seconds
+Episode 131/200 , episode_reward -66.69524811301763, value_loss 0.9463425278663635, policy_loss 0.6811550855636597, 86310 seconds
+Episode 141/200 , episode_reward -66.28490626323055, value_loss 1.346265435218811, policy_loss 0.4697600305080414, 86313 seconds
+Episode 151/200 , episode_reward -66.18385329167137, value_loss 1.089273452758789, policy_loss 0.6476340889930725, 86315 seconds
+Episode 161/200 , episode_reward -67.34910679979966, value_loss 2.4477717876434326, policy_loss 1.3284820318222046, 86317 seconds
+Episode 171/200 , episode_reward -67.28413095200375, value_loss 2.297172784805298, policy_loss 2.4862732887268066, 86318 seconds
+Episode 181/200 , episode_reward -67.51456482163314, value_loss 1.1094626188278198, policy_loss 1.0789676904678345, 86304 seconds
+Episode 191/200 , episode_reward 37.784114563520696, value_loss 36.089847564697266, policy_loss 1.83847177028656, 86323 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_0.5 save succeed!
+=== END Train < update_step : 200, noise_discount : 0.5 > 258 minutes ===
+=== START Test < update_step : 200, noise_discount : 0.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 0.5 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 1.0 > ===
+Episode 1/200 , episode_reward 57.790922024987275, value_loss 2.6327850818634033, policy_loss -0.7048946022987366, 86337 seconds
+Episode 11/200 , episode_reward 63.00818572980493, value_loss 0.7335835695266724, policy_loss 1.5138291120529175, 86345 seconds
+Episode 21/200 , episode_reward -60.50913452452046, value_loss 1.3474905490875244, policy_loss 0.5828842520713806, 86315 seconds
+Episode 31/200 , episode_reward -62.252525672323195, value_loss 1.371483325958252, policy_loss 0.6918930411338806, 86307 seconds
+Episode 41/200 , episode_reward 61.11428183591225, value_loss 1.916211485862732, policy_loss 0.49021124839782715, 86341 seconds
+Episode 51/200 , episode_reward -61.918673810314935, value_loss 2.635179042816162, policy_loss -2.1604819297790527, 86306 seconds
+Episode 61/200 , episode_reward 67.0638332456947, value_loss 1.1691017150878906, policy_loss 1.8060455322265625, 86356 seconds
+Episode 71/200 , episode_reward 61.66217586931374, value_loss 3.6489758491516113, policy_loss 1.5716352462768555, 86345 seconds
+Episode 81/200 , episode_reward 67.15925371814033, value_loss 2.778902530670166, policy_loss -0.4335033893585205, 86371 seconds
+Episode 91/200 , episode_reward -61.000039291183676, value_loss 1.385298490524292, policy_loss 0.5083191394805908, 86307 seconds
+Episode 101/200 , episode_reward -62.03612087931905, value_loss 1.2981648445129395, policy_loss -0.51861172914505, 86309 seconds
+Episode 111/200 , episode_reward 61.33930312818958, value_loss 1.5100579261779785, policy_loss 1.4207578897476196, 86341 seconds
+Episode 121/200 , episode_reward 61.961790838453176, value_loss 1.9503475427627563, policy_loss 0.002123117446899414, 86342 seconds
+Episode 131/200 , episode_reward 65.97575433801732, value_loss 2.0907037258148193, policy_loss -0.13790813088417053, 86358 seconds
+Episode 141/200 , episode_reward 60.98658358665612, value_loss 2.3930177688598633, policy_loss 0.42938685417175293, 86347 seconds
+Episode 151/200 , episode_reward 59.17519471674137, value_loss 3.5298824310302734, policy_loss -1.1704528331756592, 86344 seconds
+Episode 161/200 , episode_reward -62.17438345988707, value_loss 1.2980623245239258, policy_loss 0.42000192403793335, 86266 seconds
+Episode 171/200 , episode_reward 61.14876233104865, value_loss 1.091294765472412, policy_loss -1.3543356657028198, 86342 seconds
+Episode 181/200 , episode_reward 68.79538014820916, value_loss 1.6645922660827637, policy_loss -0.07275450229644775, 86358 seconds
+Episode 191/200 , episode_reward 38.9582642987462, value_loss 1.0546073913574219, policy_loss 0.58928382396698, 86319 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_1.0 save succeed!
+=== END Train < update_step : 200, noise_discount : 1.0 > 203 minutes ===
+=== START Test < update_step : 200, noise_discount : 1.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 1.0 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 1.5 > ===
+Episode 1/200 , episode_reward 57.172553321832105, value_loss 0.9148885607719421, policy_loss 1.8225421905517578, 86341 seconds
+Episode 11/200 , episode_reward 85.87698737892057, value_loss 1.4626952409744263, policy_loss 0.8527275323867798, 86377 seconds
+Episode 21/200 , episode_reward 87.56704396753102, value_loss 0.8511654734611511, policy_loss 1.0624542236328125, 86377 seconds
+Episode 31/200 , episode_reward 84.74920119065996, value_loss 1.6891391277313232, policy_loss 0.17640191316604614, 86376 seconds
+Episode 41/200 , episode_reward 83.85090282657562, value_loss 1.2172362804412842, policy_loss 1.4596402645111084, 86378 seconds
+Episode 51/200 , episode_reward -67.61635306280164, value_loss 3.2494330406188965, policy_loss 0.2679382860660553, 86312 seconds
+Episode 61/200 , episode_reward 87.93806563602105, value_loss 5.715166091918945, policy_loss -0.07318490743637085, 86375 seconds
+Episode 71/200 , episode_reward 58.445258513226484, value_loss 2.599151372909546, policy_loss 0.28803879022598267, 86339 seconds
+Episode 81/200 , episode_reward 57.01459072644392, value_loss 4.246488094329834, policy_loss -1.7939095497131348, 86346 seconds
+Episode 91/200 , episode_reward 57.92039177870408, value_loss 4.9280314445495605, policy_loss -0.19274762272834778, 86340 seconds
+Episode 101/200 , episode_reward -66.32314522644766, value_loss 1.0965620279312134, policy_loss -0.6814709901809692, 86315 seconds
+Episode 111/200 , episode_reward 66.94511579319928, value_loss 1.8379592895507812, policy_loss -0.33234015107154846, 86360 seconds
+Episode 121/200 , episode_reward 85.56084988636596, value_loss 1.1247847080230713, policy_loss 0.9350634813308716, 86378 seconds
+Episode 131/200 , episode_reward 56.84205424652355, value_loss 3.863283157348633, policy_loss 0.7426726818084717, 86340 seconds
+Episode 141/200 , episode_reward 85.92514075330222, value_loss 3.372917652130127, policy_loss -1.2911767959594727, 86375 seconds
+Episode 151/200 , episode_reward 57.450296869059756, value_loss 5.983020305633545, policy_loss -0.8338518142700195, 86352 seconds
+Episode 161/200 , episode_reward -67.2374411898454, value_loss 2.800691604614258, policy_loss -1.2232764959335327, 86310 seconds
+Episode 171/200 , episode_reward 87.4467769326258, value_loss 2.689404010772705, policy_loss -1.3003712892532349, 86381 seconds
+Episode 181/200 , episode_reward 58.04946334657701, value_loss 13.600947380065918, policy_loss -1.726121187210083, 86335 seconds
+Episode 191/200 , episode_reward 58.36463210996894, value_loss 1.571000337600708, policy_loss -0.7511763572692871, 86342 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_1.5 save succeed!
+=== END Train < update_step : 200, noise_discount : 1.5 > 157 minutes ===
+=== START Test < update_step : 200, noise_discount : 1.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 1.5 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 2.0 > ===
+Episode 1/200 , episode_reward 53.9139222198006, value_loss 5.476105213165283, policy_loss -0.5196695327758789, 86338 seconds
+Episode 11/200 , episode_reward 55.3120843135926, value_loss 2.850024461746216, policy_loss -1.4474867582321167, 86351 seconds
+Episode 21/200 , episode_reward 83.2100019521498, value_loss 1.0167549848556519, policy_loss 1.0420114994049072, 86376 seconds
+Episode 31/200 , episode_reward 85.11493396008966, value_loss 2.3790416717529297, policy_loss -1.9577324390411377, 86378 seconds
+Episode 41/200 , episode_reward 55.53276144054671, value_loss 2.609513759613037, policy_loss -2.0460424423217773, 86350 seconds
+Episode 51/200 , episode_reward 53.03047211620437, value_loss 1.0804691314697266, policy_loss 0.37851789593696594, 86346 seconds
+Episode 61/200 , episode_reward 85.87658782167622, value_loss 0.9038494229316711, policy_loss -0.3549848198890686, 86379 seconds
+Episode 71/200 , episode_reward 84.08849952546561, value_loss 1.997340202331543, policy_loss -2.8910722732543945, 86378 seconds
+Episode 81/200 , episode_reward 53.46382383071174, value_loss 0.6573953032493591, policy_loss -0.2462528944015503, 86340 seconds
+Episode 91/200 , episode_reward 54.22576407933959, value_loss 1.3227711915969849, policy_loss 0.305703341960907, 86347 seconds
+Episode 101/200 , episode_reward 82.94254081831613, value_loss 2.260728120803833, policy_loss -1.2885024547576904, 86374 seconds
+Episode 111/200 , episode_reward 84.96429012513184, value_loss 3.1515402793884277, policy_loss -1.8257882595062256, 86378 seconds
+Episode 121/200 , episode_reward 82.24506387029857, value_loss 2.167896270751953, policy_loss -1.5655958652496338, 86377 seconds
+Episode 131/200 , episode_reward -72.98345787645307, value_loss 1.3916728496551514, policy_loss -1.4803775548934937, 86314 seconds
+Episode 141/200 , episode_reward 84.41870119700931, value_loss 3.778604507446289, policy_loss -1.812780499458313, 86377 seconds
+Episode 151/200 , episode_reward 85.94448113090459, value_loss 3.362081289291382, policy_loss -0.20041467249393463, 86379 seconds
+Episode 161/200 , episode_reward 54.12571274981209, value_loss 1.3536790609359741, policy_loss -0.7352467775344849, 86344 seconds
+Episode 171/200 , episode_reward 84.21651963061167, value_loss 11.471504211425781, policy_loss -5.478782653808594, 86384 seconds
+Episode 181/200 , episode_reward 83.83131381939462, value_loss 4.929550647735596, policy_loss -2.18495512008667, 86377 seconds
+Episode 191/200 , episode_reward 85.57580260174706, value_loss 2.6875452995300293, policy_loss -2.675635814666748, 86381 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_2.0 save succeed!
+=== END Train < update_step : 200, noise_discount : 2.0 > 133 minutes ===
+=== START Test < update_step : 200, noise_discount : 2.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 2.0 > 0 minutes ===
+=== START Train < update_step : 200, noise_discount : 3.0 > ===
+Episode 1/200 , episode_reward 82.71213263923993, value_loss 5.17808198928833, policy_loss -1.7148950099945068, 86380 seconds
+Episode 11/200 , episode_reward 81.00613469938362, value_loss 2.9472432136535645, policy_loss -4.714951515197754, 86377 seconds
+Episode 21/200 , episode_reward 82.25820558515701, value_loss 2.336491107940674, policy_loss -2.8084359169006348, 86374 seconds
+Episode 31/200 , episode_reward 83.09019102900206, value_loss 2.503523349761963, policy_loss -2.2575104236602783, 86378 seconds
+Episode 41/200 , episode_reward 83.89342686965924, value_loss 1.6580405235290527, policy_loss -1.7330551147460938, 86379 seconds
+Episode 51/200 , episode_reward 82.68715531724199, value_loss 2.9068970680236816, policy_loss -1.9418058395385742, 86378 seconds
+Episode 61/200 , episode_reward 49.19361007849572, value_loss 2.426872491836548, policy_loss -3.619823694229126, 86341 seconds
+Episode 71/200 , episode_reward 83.74314315568496, value_loss 4.3853983879089355, policy_loss -4.066313743591309, 86381 seconds
+Episode 81/200 , episode_reward 82.66802283879464, value_loss 83.19841003417969, policy_loss -3.471698760986328, 86381 seconds
+Episode 91/200 , episode_reward 48.72337957806383, value_loss 0.7584392428398132, policy_loss -1.1403237581253052, 86340 seconds
+Episode 101/200 , episode_reward 82.06508350482154, value_loss 1.6374478340148926, policy_loss -2.6820390224456787, 86381 seconds
+Episode 111/200 , episode_reward 50.44797178985648, value_loss 1.70595121383667, policy_loss -4.719691753387451, 86347 seconds
+Episode 121/200 , episode_reward 80.56801472196939, value_loss 25.42510223388672, policy_loss -7.475095748901367, 86378 seconds
+Episode 131/200 , episode_reward 80.57362216345032, value_loss 3.1975786685943604, policy_loss -0.8166233897209167, 86377 seconds
+Episode 141/200 , episode_reward 80.36587005170747, value_loss 16.051494598388672, policy_loss -7.690481185913086, 86379 seconds
+Episode 151/200 , episode_reward 83.06706996125142, value_loss 3.7699050903320312, policy_loss -3.5417909622192383, 86378 seconds
+Episode 161/200 , episode_reward 82.75580905409477, value_loss 0.644940197467804, policy_loss -0.5023778676986694, 86379 seconds
+Episode 171/200 , episode_reward 82.79340345376255, value_loss 0.5505861043930054, policy_loss -4.921142578125, 86377 seconds
+Episode 181/200 , episode_reward 50.03189450471625, value_loss 3.7235686779022217, policy_loss -1.6486036777496338, 86347 seconds
+Episode 191/200 , episode_reward 83.31447762028797, value_loss 0.25022077560424805, policy_loss 0.7307933568954468, 86378 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_200_noise_discount_3.0 save succeed!
+=== END Train < update_step : 200, noise_discount : 3.0 > 109 minutes ===
+=== START Test < update_step : 200, noise_discount : 3.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 200, noise_discount : 3.0 > 0 minutes ===
+=== START Train < update_step : 250, noise_discount : 0.1 > ===
+Episode 1/200 , episode_reward -91.99626498693058, value_loss 13.023375511169434, policy_loss -6.611372470855713, 86306 seconds
+Episode 11/200 , episode_reward -92.40351849815092, value_loss 0.8693428635597229, policy_loss -4.526123046875, 86312 seconds
+Episode 21/200 , episode_reward -92.52254787041885, value_loss 4.880541801452637, policy_loss -6.665352821350098, 86318 seconds
+Episode 31/200 , episode_reward -92.76293687741952, value_loss 7.990988731384277, policy_loss -4.817830562591553, 86318 seconds
+Episode 41/200 , episode_reward -92.67695662063562, value_loss 7.067220687866211, policy_loss -6.601079940795898, 86311 seconds
+Episode 51/200 , episode_reward -92.2530844733791, value_loss 31.720277786254883, policy_loss -3.9048514366149902, 86316 seconds
+Episode 61/200 , episode_reward -92.23489991335454, value_loss 53.91975402832031, policy_loss -6.259242057800293, 86322 seconds
+Episode 71/200 , episode_reward -92.0641724511227, value_loss 4.048874378204346, policy_loss -3.185215473175049, 86254 seconds
+Episode 81/200 , episode_reward -92.65263675403821, value_loss 3.4874014854431152, policy_loss -5.523714065551758, 86254 seconds
+Episode 91/200 , episode_reward -92.5141661239892, value_loss 0.7354644536972046, policy_loss -3.6103475093841553, 86272 seconds
+Episode 101/200 , episode_reward -92.54702901817606, value_loss 4.42586612701416, policy_loss -5.120299339294434, 86264 seconds
+Episode 111/200 , episode_reward -92.30388718688866, value_loss 3.6195645332336426, policy_loss -4.016266822814941, 86261 seconds
+Episode 121/200 , episode_reward -92.34014196989499, value_loss 2.215559720993042, policy_loss -3.1559970378875732, 86260 seconds
+Episode 131/200 , episode_reward -92.48106439244874, value_loss 7.317501544952393, policy_loss -4.615301132202148, 86277 seconds
+Episode 141/200 , episode_reward -92.49956396612443, value_loss 2.181723117828369, policy_loss -2.4800922870635986, 86260 seconds
+Episode 151/200 , episode_reward -92.19265254685027, value_loss 2.4429986476898193, policy_loss -2.1996679306030273, 86259 seconds
+Episode 161/200 , episode_reward -92.78441318652708, value_loss 1.3422956466674805, policy_loss -1.451169729232788, 86253 seconds
+Episode 171/200 , episode_reward -92.13403332649338, value_loss 3.7674083709716797, policy_loss -3.5794246196746826, 86246 seconds
+Episode 181/200 , episode_reward -92.39141460079696, value_loss 0.23769663274288177, policy_loss -3.14145565032959, 86262 seconds
+Episode 191/200 , episode_reward -92.35951443217454, value_loss 1.0800873041152954, policy_loss -2.069650650024414, 86279 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_250_noise_discount_0.1 save succeed!
+=== END Train < update_step : 250, noise_discount : 0.1 > 397 minutes ===
+=== START Test < update_step : 250, noise_discount : 0.1 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 250, noise_discount : 0.1 > 0 minutes ===
+=== START Train < update_step : 250, noise_discount : 0.5 > ===
+Episode 1/200 , episode_reward -73.74309330256848, value_loss 0.8639264106750488, policy_loss -0.7210515737533569, 86254 seconds
+Episode 11/200 , episode_reward -71.8583937177988, value_loss 55.568824768066406, policy_loss -4.802722930908203, 86258 seconds
+Episode 21/200 , episode_reward -72.07821216602423, value_loss 16.18231201171875, policy_loss -2.8429203033447266, 86257 seconds
+Episode 31/200 , episode_reward -72.732462051218, value_loss 2.440563440322876, policy_loss -1.3241941928863525, 86336 seconds
+Episode 41/200 , episode_reward -72.09398046838974, value_loss 1.731628656387329, policy_loss -2.0891027450561523, 86344 seconds
+Episode 51/200 , episode_reward -72.20385953218917, value_loss 5.49025821685791, policy_loss -1.9374555349349976, 86343 seconds
+Episode 61/200 , episode_reward -72.3851738982696, value_loss 0.6632099151611328, policy_loss -1.1754214763641357, 86344 seconds
+Episode 71/200 , episode_reward -72.45921264834071, value_loss 2.921220302581787, policy_loss -2.847597599029541, 86335 seconds
+Episode 81/200 , episode_reward -71.80604542970485, value_loss 0.5495259165763855, policy_loss -1.2273366451263428, 86344 seconds
+Episode 91/200 , episode_reward -72.59400042575761, value_loss 3.6941003799438477, policy_loss -2.234152317047119, 86343 seconds
+Episode 101/200 , episode_reward -72.85824057357856, value_loss 2.1889841556549072, policy_loss -1.2097951173782349, 86341 seconds
+Episode 111/200 , episode_reward -72.33727023713263, value_loss 1.7141406536102295, policy_loss -1.748561978340149, 86316 seconds
+Episode 121/200 , episode_reward -72.89677249889924, value_loss 2.609292984008789, policy_loss -0.8904684782028198, 86312 seconds
+Episode 131/200 , episode_reward -72.3314860833102, value_loss 3.8463566303253174, policy_loss -2.800502061843872, 86314 seconds
+Episode 141/200 , episode_reward -71.94950137329212, value_loss 3.4238739013671875, policy_loss -0.6845775842666626, 86312 seconds
+Episode 151/200 , episode_reward -73.22377246538191, value_loss 0.24198777973651886, policy_loss -2.903230667114258, 86314 seconds
+Episode 161/200 , episode_reward -72.6761802122655, value_loss 63.17338562011719, policy_loss -1.6671594381332397, 86312 seconds
+Episode 171/200 , episode_reward -73.04562834131916, value_loss 11.436397552490234, policy_loss -2.595209836959839, 86313 seconds
+Episode 181/200 , episode_reward -72.4860644784054, value_loss 1.7017104625701904, policy_loss -0.8492270708084106, 86303 seconds
+Episode 191/200 , episode_reward -72.29335351060966, value_loss 0.9456060528755188, policy_loss -0.7497849464416504, 86347 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_250_noise_discount_0.5 save succeed!
+=== END Train < update_step : 250, noise_discount : 0.5 > 261 minutes ===
+=== START Test < update_step : 250, noise_discount : 0.5 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 250, noise_discount : 0.5 > 0 minutes ===
+=== START Train < update_step : 250, noise_discount : 1.0 > ===
+Episode 1/200 , episode_reward -68.12281253572651, value_loss 1.9016274213790894, policy_loss 0.44751042127609253, 86345 seconds
+Episode 11/200 , episode_reward 53.350362943954295, value_loss 0.8153294324874878, policy_loss -2.1564464569091797, 86350 seconds
+Episode 21/200 , episode_reward -67.95244183829541, value_loss 1.6869549751281738, policy_loss -2.781931161880493, 86332 seconds
+Episode 31/200 , episode_reward -67.42566628396031, value_loss 0.45196500420570374, policy_loss -2.0180413722991943, 86306 seconds
+Episode 41/200 , episode_reward -67.79625612764814, value_loss 0.7100359201431274, policy_loss -2.1382789611816406, 86236 seconds
+Episode 51/200 , episode_reward -67.18641900710914, value_loss 0.5462867021560669, policy_loss -1.6112444400787354, 86234 seconds
+Episode 61/200 , episode_reward 51.67372404781497, value_loss 1.9049537181854248, policy_loss -3.1305651664733887, 86270 seconds
+Episode 71/200 , episode_reward 85.2818098014121, value_loss 2.2165942192077637, policy_loss -3.3540971279144287, 86350 seconds
+Episode 81/200 , episode_reward -67.87977819234557, value_loss 1.691420555114746, policy_loss -1.571903944015503, 86186 seconds
+Episode 91/200 , episode_reward 52.34905305330442, value_loss 2.275312662124634, policy_loss -1.0015599727630615, 86225 seconds
+Episode 101/200 , episode_reward -68.30008061050627, value_loss 2.495245933532715, policy_loss -1.6642796993255615, 86178 seconds
+Episode 111/200 , episode_reward 52.03608570763826, value_loss 1.76726233959198, policy_loss -2.5222859382629395, 86223 seconds
+Episode 121/200 , episode_reward -67.13231180594467, value_loss 5.5118255615234375, policy_loss -4.125079154968262, 86176 seconds
+Episode 131/200 , episode_reward -67.5047539683194, value_loss 1.9394214153289795, policy_loss -2.0038363933563232, 86179 seconds
+Episode 141/200 , episode_reward -68.82102027296162, value_loss 0.5781904458999634, policy_loss -2.6870040893554688, 86179 seconds
+Episode 151/200 , episode_reward -68.19115298324962, value_loss 3.935556411743164, policy_loss -4.178659915924072, 86184 seconds
+Episode 161/200 , episode_reward -68.31470005934288, value_loss 1.7853102684020996, policy_loss -2.6990914344787598, 86174 seconds
+Episode 171/200 , episode_reward 83.33443087574466, value_loss 3.0987184047698975, policy_loss -3.2864935398101807, 86326 seconds
+Episode 181/200 , episode_reward -68.04905957468583, value_loss 0.28425878286361694, policy_loss -0.882154643535614, 86186 seconds
+Episode 191/200 , episode_reward -68.00722250055716, value_loss 3.6339128017425537, policy_loss -1.7169705629348755, 86173 seconds
+actor model ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model/update_step_250_noise_discount_1.0 save succeed!
+=== END Train < update_step : 250, noise_discount : 1.0 > 531 minutes ===
+=== START Test < update_step : 250, noise_discount : 1.0 > ===
+Episode 1/100 , episode_reward -9.99999999999998
+Episode 11/100 , episode_reward -9.99999999999998
+Episode 21/100 , episode_reward -9.99999999999998
+Episode 31/100 , episode_reward -9.99999999999998
+Episode 41/100 , episode_reward -9.99999999999998
+Episode 51/100 , episode_reward -9.99999999999998
+Episode 61/100 , episode_reward -9.99999999999998
+Episode 71/100 , episode_reward -9.99999999999998
+Episode 81/100 , episode_reward -9.99999999999998
+Episode 91/100 , episode_reward -9.99999999999998
+=== END Test  < update_step : 250, noise_discount : 1.0 > 0 minutes ===
+=== START Train < update_step : 250, noise_discount : 1.5 > ===
+Episode 1/200 , episode_reward -72.12853410205423, value_loss 4.2632832527160645, policy_loss -4.646401882171631, 86174 seconds
+Episode 11/200 , episode_reward 82.78165816864582, value_loss 2.280087471008301, policy_loss -2.84175443649292, 86331 seconds
+Episode 21/200 , episode_reward 82.24987925713367, value_loss 2.0960006713867188, policy_loss -3.350987672805786, 86324 seconds
+Episode 31/200 , episode_reward 49.64019450055748, value_loss 3.1529412269592285, policy_loss -1.479902982711792, 86219 seconds
+Episode 41/200 , episode_reward -71.93793899970413, value_loss 2.1396408081054688, policy_loss -2.6320242881774902, 86175 seconds
+Episode 51/200 , episode_reward -72.17136947417895, value_loss 0.48249250650405884, policy_loss -1.8961982727050781, 86187 seconds
+Episode 61/200 , episode_reward -72.74580536702166, value_loss 1.69243586063385, policy_loss -1.8548232316970825, 86166 seconds
+Episode 71/200 , episode_reward 80.37747585826075, value_loss 1.3974578380584717, policy_loss -2.1436543464660645, 86326 seconds
+Episode 81/200 , episode_reward 48.858530858327924, value_loss 3.292234420776367, policy_loss -2.0511083602905273, 86224 seconds
+Episode 91/200 , episode_reward -72.08663311372942, value_loss 2.2293033599853516, policy_loss -1.9920189380645752, 86174 seconds
+Episode 101/200 , episode_reward 47.458614982929, value_loss 0.654418408870697, policy_loss -1.8826225996017456, 86212 seconds
+Episode 111/200 , episode_reward -75.01711257095299, value_loss 1.1079981327056885, policy_loss -1.9944432973861694, 86177 seconds
+Episode 121/200 , episode_reward 50.630442257568944, value_loss 1.6854958534240723, policy_loss -2.986726999282837, 86310 seconds

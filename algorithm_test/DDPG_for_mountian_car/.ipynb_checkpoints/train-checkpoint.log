@@ -1,0 +1,4 @@
+nohup: ignoring input
+model_dir : ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/model
+plot_dir : ../test_log/DDPG_for_mountian_car/noise_and_step_2019-10-13_14:51:11/tensorboard
+make model_dir and plot_dir succeed!

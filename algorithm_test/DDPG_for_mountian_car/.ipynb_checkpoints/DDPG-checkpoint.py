@@ -99,5 +99,5 @@ class DDPG:
         print("actor model {} save succeed!".format(filename))
     
     def load(self, filename):
-        self.policy_net.load_state_dict(torch.load(filename + "policy.pth"))
+        self.policy_net.load_state_dict(torch.load(filename + "_policy.pth"))
         print("actor model {} load succeed!".format(filename))
